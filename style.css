@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    direction:rtl;
+    font-family:"Droid Arabic Kufi", "Droid Sans", sans-serif;
+    font-size:14px;
+}
+
+/** Start Home Page **/
+header{
+    background-color: black;
+}
+
+.navbar-toggler{
+    background: white;
+}
+
+.h-n-a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 768px){
+    .landing-nav{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.landing-nav .navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+.landing-nav ul a{
+    position: relative;
+    padding: 20px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+    width: fit-content;
+}
+
+
+.landing-nav ul a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+}
+
+.landing-nav ul a:hover,
+.landing-nav ul a:focus{
+    color: white;
+}
+
+.landing-nav ul a:hover::after{
+    width: 100%;
+}
+
+.landing-nav .navbar-brand{
+    flex: 1;
+}
+
+.landing-nav .navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* start slide show */
+#latestarticles img{
+    width: 100%;
+    height: 580px;
+}
+
+
+#latestarticles .carousel-item{
+    position: relative;
+}
+
+#latestarticles .carousel-item .carousel-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D78079B2;
+}
+
+#latestarticles .carousel-item .post{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FCDAD8;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+
+#latestarticles .carousel-item .post .category{
+    margin: 20px;
+}
+
+#latestarticles .carousel-item .post img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+#latestarticles .carousel-item .post span{
+    color: #FCDAD8;
+    font-size: 24px;
+}
+
+#latestarticles .carousel-item .post h1{
+    color: #FCDAD8;
+    font-weight: 700;
+}
+
+
+.about{
+    width: 99%;
+    position: relative;
+    background: #2C3739;
+    padding: 50px 0;
+    font-weight: 900;
+    font-size: 25px;
+    box-shadow: 17px -12px 0px 5px #FCDAD8;
+    float: left;
+}
+
+.about p{
+    position: relative;
+    color: #FCDAD8;
+}
+
+/** End Home Page**/
