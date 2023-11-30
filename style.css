@@ -1,3 +1,48 @@
+@font-face {
+    font-family: 'dahab';
+    src: local('dahab-black'), url('assets/fonts/Dahab-sub-ngawia/Dahab-sub-ngawia/DahabArabic-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dahab'; 
+    src: local('dahab-regular'), url('assets/fonts/Dahab-sub-ngawia/Dahab-sub-ngawia/DahabArabic-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dahab'; 
+    src: local('dahab-bold'), url('assets/fonts/Dahab-sub-ngawia/Dahab-sub-ngawia/DahabArabic-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'omnia'; 
+    src: local('dahab-black'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'omnia'; 
+    src: local('dahab-regular'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'omnia'; 
+    src: local('dahab-bold'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -49,6 +94,7 @@ header{
     font-weight: 400;
     font-size: 22px;
     width: fit-content;
+    font-family: 'dahab';
 }
 
 
@@ -124,11 +170,13 @@ header{
 #latestarticles .carousel-item .post span{
     color: #FCDAD8;
     font-size: 24px;
+    font-family: 'omnia';
 }
 
 #latestarticles .carousel-item .post h1{
     color: #FCDAD8;
     font-weight: 700;
+    font-family: 'omnia';
 }
 
 
@@ -146,6 +194,7 @@ header{
 .about p{
     position: relative;
     color: #FCDAD8;
+    font-family: 'dahab';
 }
 
 /** End Home Page**/
