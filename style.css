@@ -197,4 +197,45 @@ header{
     font-family: 'dahab';
 }
 
+
+.projects{
+    background-image: url('assets/pattern_1.png');
+    height: 100vh;
+    margin-top: 180px;
+}
+
+.projects svg{
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.projects h1 {
+    position: relative;
+    display: inline-block;
+    font-family: 'omnia';
+    color: #FCDAD8;
+    font-size: 50px;
+}
+
+.projects h1::before {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    height: 90vh; 
+    width: 2px;
+    background-color: #FCDAD8;
+    transform: translateX(-50%);
+}
+
+.projects h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 70vw;
+    background-color: #FCDAD8;
+    transform: translateX(-103%);
+}
 /** End Home Page**/
