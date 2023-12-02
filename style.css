@@ -65,13 +65,7 @@ header{
 }
 
 .h-n-a::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 3px;
-    background-color: white;
+    width: 100% !important;
 }
 
 @media (max-width: 768px){
@@ -647,3 +641,184 @@ footer form button{
 }
 
 /** End Home Page**/
+
+
+
+/** start truthfullness index page **/
+
+.index-header{
+    background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;");
+    background-size: cover;
+}
+.about-index{
+    display: flex;
+}
+@media (max-width: 768px){
+    .about-index{
+        flex-wrap: wrap;
+    }
+}
+.about-index .right,
+.about-index .left{
+    color: #FCDAD8;
+    text-align: right;
+    font-family: 'omnia';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.methodology{
+    padding: 100px 0;
+    background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/6881ae05-22cd-478f-bb02-2cfb2a302194?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&width=1600");
+    text-align: center;
+}
+
+
+.methodology p{
+    font-size: 25px;
+}
+
+.methodology .carts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px){
+    .methodology .carts{
+        flex-direction: column;
+    }
+}
+
+.methodology .cart{
+    width: calc(70% / 3);
+}
+
+@media (max-width: 768px){
+    .methodology .cart{
+        width: 100%;
+    }
+}
+
+.methodology .cart .icon{
+    padding: 50px;
+    border: 2px solid #D78079;
+    border-radius: 23px;
+}
+
+.methodology .cart h2{
+    font-weight: 700;
+}
+
+.methodology h2,
+.methodology h1,
+.methodology p{
+    color: #D78079;
+    font-family: 'omnia';
+}
+
+.studies{
+    background-color: black;
+    padding: 100px 0;
+}
+
+.studies .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media (max-width: 768px){
+    .studies .container{
+        flex-direction: column;
+    }
+}
+
+.studies .study{
+    width: calc(90% / 2);
+}
+
+@media (max-width: 768px){
+    .studies .study{
+        width: 100%;
+    }
+}
+
+.studies .study img{
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width: 768px){
+    .studies .study img{
+        width: 100%;
+    }
+}
+
+
+.studies .study h2{
+    color: #FCDAD8;
+    font-family: 'omnia';
+    margin-top: 10px;
+}
+
+.studies .study a{
+    text-decoration: none;
+    border: 2px solid #FCDAD8;
+    color: #FCDAD8;
+    padding: 10px 20px;
+    display: block;
+    width: fit-content;
+}
+
+
+.goal{
+    background-color: #D78079;
+}
+
+.goal .container{
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .goal .container{
+        flex-direction: column-reverse;
+    }
+}
+
+
+.goal .desc{
+    margin-top: 50px;
+}
+@media (max-width: 768px){
+    .goal .desc{
+        margin-top: 0;
+        padding: 20px 0;
+    }
+}
+.goal img{
+    width: 50%;
+}
+@media (max-width: 768px){
+    .goal img{
+        width: 100%;
+    }
+}
+
+.goal p{
+    color: #FCDAD8;
+    font-family: 'omnia';
+    font-size: 32px;
+}
+
+.goal a{
+    background: #FCDAD8;
+    text-decoration: none;
+    color: #D78079;
+    font-family: 'dahab';
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 30px 10px 30px; 
+}
+
+/** end truthfullness index page **/
