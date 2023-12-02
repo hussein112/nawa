@@ -183,6 +183,13 @@ header{
     font-size: 25px;
     box-shadow: 17px -12px 0px 5px #FCDAD8;
     float: left;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .about{
+        box-shadow: 17px -5px 0px 0 #FCDAD8;
+    }
 }
 
 .about p{
@@ -256,15 +263,21 @@ header{
     transform: translateX(-103%);
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 300px) { 
     .projects h1::after {
         width: 100%;
     }
 }
 
+@media (max-width: 576px) { 
+    .projects h1::after {
+        width: 50vw;
+    }
+}
+
 @media (min-width: 577px) { 
     .projects h1::after {
-        width: 300px;
+        width: 350px;
     }
 }
 
@@ -350,6 +363,7 @@ header{
 @media (max-width: 768px) {
     .project-section{
         flex-wrap: wrap-reverse;
+        width: 100%;
     }
 
     .project-section .description p{
@@ -489,6 +503,12 @@ header{
     }
 }
 
+.how .cart:hover{
+    transform: translateY(-17px);
+    transition: .3s;
+    cursor: pointer;
+}
+
 .how .cart h2{
     font-family: 'omnia';
     color: #016477;
@@ -499,17 +519,6 @@ header{
     color: #016477;
     font-size: 20px;
 }
-
-.how .cart-analysis{
-    transform: translateY(-17px);
-}
-
-@media (max-width: 768px){
-    .how .cart-analysis{
-        transform: none;
-    }
-}
-
 
 .share{
     background-color: #744D47;
