@@ -860,6 +860,8 @@ footer form button{
     position: relative;
     padding: 20px;
     color: white;
+    font-family: 'dahab';
+    font-size: 25px;
 }
 
 .mokhber-nav a::after{
@@ -882,20 +884,20 @@ footer form button{
     width: 100%;
 }
 
-.ta7kik .date,
-.ta7kik .author,
-.ta7kik .country{
+.post .date,
+.post .author,
+.post .country{
     font-family: 'omnia';
 }
 
 
 
-.full-page-ta7kik{
+.full-page-post{
     position: relative;
     height: 335px;
 }
 
-.full-page-ta7kik .bg{
+.full-page-post .bg{
     position: absolute;
     top: 0;
     z-index: -1;
@@ -903,7 +905,7 @@ footer form button{
     height: 100%;
 }
 
-.full-page-ta7kik .container{
+.full-page-post .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -911,27 +913,27 @@ footer form button{
     padding: 100px 0;
 }
 
-.full-page-ta7kik .meta{
+.full-page-post .meta{
     flex: 1;
 }
 
-.full-page-ta7kik .category{
+.full-page-post .category{
     flex: 50%;
     align-self: flex-start;
 }
 
-.full-page-ta7kik .meta{
+.full-page-post .meta{
     flex: 70%
 }
 
-.ta7kik a{
+.post a{
     font-family: 'dahab';
     font-size: 30px;
     font-weight: 700;
     display: block;
 }
 
-.ta7kik-overlay{
+.post-overlay{
     width: 100%;
     height: 100%;
     background: #D8BBB894;
@@ -941,17 +943,17 @@ footer form button{
     z-index: -1;
 }
 
-.ta7kik .author{
+.post .author{
     position: relative;
 }
 
-.ta7kik .author,
-.ta7kik .date{
+.post .author,
+.post .date{
     padding: 0 5px;
 }
 
 
-.ta7kik .author::after{
+.post .author::after{
     content: "";
     position: absolute;
     width: 1px;
@@ -960,18 +962,18 @@ footer form button{
     left: -1%;
 }
 
-.half-page-ta7kik{
+.half-page-post{
     position: relative;
     display: flex;
 }
 
-.half-page-ta7kik .ta7kik{
+.half-page-post .post{
     width: 50%;
     position: relative;
     height: 335px;
 }
 
-.half-page-ta7kik .bg{
+.half-page-post .bg{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -980,60 +982,80 @@ footer form button{
     z-index: -2;
 }
 
-.half-page-ta7kik .ta7kik{
+.half-page-post .post{
     padding: 20px;
 }
-.half-page-ta7kik .ta7kik .top{
+.half-page-post .post .top{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
 
-.half-page-ta7kik .ta7kik .bottom{
+.half-page-post .post .bottom{
     display: flex;
     flex-direction: column;
 }
 
-.half-page-ta7kik .ta7kik:nth-child(odd) .text,
-.full-page-ta7kik:nth-child(odd) .text{
+.half-page-post:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.half-page-post .post:nth-child(odd) .text,
+.full-page-post:nth-child(odd) .text{
     color: #FCDAD8;
 }
 
-.half-page-ta7kik .ta7kik:nth-child(odd)  .ta7kik .author::after,
-.full-page-ta7kik:nth-child(odd)  .ta7kik .author::after {
+.half-page-post .post:nth-child(odd)  .post .author::after,
+.full-page-post:nth-child(odd)  .post .author::after {
     background: #FCDAD8;
 }
 
 
-.half-page-ta7kik .ta7kik:nth-child(even)  .author::after,
-.full-page-ta7kik:nth-child(even)  .ta7kik .author::after {
+.half-page-post .post:nth-child(even)  .author::after,
+.full-page-post:nth-child(even)  .post .author::after {
     background: #016477;
 }
 
-.half-page-ta7kik .ta7kik:nth-child(even) .text,
-.full-page-ta7kik:nth-child(even) .text {
+.half-page-post .post:nth-child(even) .text,
+.full-page-post:nth-child(even) .text {
     color: #016477;
 }
 
-.half-page-ta7kik .ta7kik:nth-child(even) .category svg,
-.full-page-ta7kik:nth-child(even) .category svg{
+.half-page-post .post:nth-child(even) .category svg,
+.full-page-post:nth-child(even) .category svg{
     fill: #016477;
 }
 
-.half-page-ta7kik .ta7kik:nth-child(odd) .category svg,
-.full-page-ta7kik:nth-child(odd) .category svg{
+.half-page-post .post:nth-child(odd) .category svg,
+.full-page-post:nth-child(odd) .category svg{
     fill: #FCDAD8;
 }
 
-.half-page-ta7kik .ta7kik:nth-child(odd) .ta7kik-overlay,
-.full-page-ta7kik:nth-child(odd) .ta7kik-overlay{
+.half-page-post .post:nth-child(odd) .post-overlay,
+.full-page-post:nth-child(odd) .post-overlay{
     background: #0164771C
 }
 
-.half-page-ta7kik .ta7kik:nth-child(even)  .ta7kik-overlay,
-.full-page-ta7kik:nth-child(even)  .ta7kik-overlay {
+.half-page-post .post:nth-child(even)  .post-overlay,
+.full-page-post:nth-child(even)  .post-overlay {
     background: #D8BBB894;
+}
+
+.half-page-post .post:nth-child(even)  .play svg,
+.full-page-post:nth-child(even) .play svg{
+    fill: #FCDAD8
+}
+
+.half-page-post .post:nth-child(odd)  .play svg,
+.full-page-post:nth-child(odd) .play svg{
+    fill: #016477
+}
+
+
+.post .play{
+    float: left;
+    margin-top: 50px;
 }
 
 /** End Mokhber Page **/
