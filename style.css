@@ -1191,3 +1191,99 @@ footer form button{
     color: #000;
 }
 /** End Resources Page **/
+
+/** Start Team Page **/
+
+.team{
+    background-image: url("assets/images/team_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.team .members{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team .members .member{
+    margin: 20px;
+}
+
+.team .member .name{
+    color: #FCDAD8;
+    font-family: 'dahab';
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.team .member .country{
+    color: #FFF;
+    font-family: 'dahab';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.newsroom-graduates{
+    background-color: #D78079
+}
+
+.newsroom-graduates .section-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.newsroom-graduates .section-title p,
+.newsroom-graduates .section-title h1{
+    flex: 50%;
+}
+
+.newsroom-graduates .section-title h1{
+    color: #FFF;
+    font-family: 'dahab';
+}
+
+.newsroom-graduates .section-title p{
+    color: #FFF;
+    font-family: 'omnia';
+    font-size: 25px;
+}
+
+.newsroom-graduates hr{
+    color: white;
+}
+
+.newsroom-graduates .carts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsroom-graduates .cart{
+    background: #2F2F2F;
+    padding: 30px;
+    margin: 10px 0;
+}
+
+.newsroom-graduates .cart h1{
+    color: #FCDAD8;
+    font-family: 'dahab';
+}
+
+.newsroom-graduates .cart h2{
+    color: #fff;
+    font-family: 'dahab';
+}
+
+.newsroom-graduates .cart a{
+    background: #D78079;
+    padding: 20px;
+    color: #FCDAD8;
+    display: block;
+    width: fit-content;
+}
+
+/** End Team Page **/
