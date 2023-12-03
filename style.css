@@ -666,12 +666,23 @@ footer form button{
 }
 .about-index{
     display: flex;
+    justify-content: center;
 }
 @media (max-width: 768px){
     .about-index{
         flex-wrap: wrap;
     }
 }
+
+.about-index .left{
+    width: 438.873px;
+}
+
+.about-index .right{
+    width: 491.59px;
+}
+
+
 .about-index .right,
 .about-index .left{
     color: #FCDAD8;
@@ -679,7 +690,7 @@ footer form button{
     font-family: 'omnia';
     font-size: 24px;
     font-weight: 500;
-    width: calc(100% / 2);
+    margin: 0 50px;
 }
 
 .methodology{
@@ -862,7 +873,7 @@ footer form button{
 
 .mokhber-nav a{
     position: relative;
-    padding: 20px;
+    padding: 20px 0;
     color: white;
     font-family: 'dahab';
     font-size: 25px;
@@ -1133,8 +1144,8 @@ footer form button{
 
 .resources-carts .cart{
     position: relative;
-    width: 490px;
-    height: 330px;
+    width: 389.394px;
+    height: 329.462px;
     padding: 20px;
     margin: 71px;
 }
@@ -1153,7 +1164,7 @@ footer form button{
     position: absolute;
     bottom: 5%;
     font-family: 'dahab';
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -1208,6 +1219,11 @@ footer form button{
 
 .team .members .member{
     margin: 20px;
+}
+
+.team .members .member img{
+    width: 252.684px;
+    height: 304.688px;
 }
 
 .team .member .name{
