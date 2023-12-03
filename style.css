@@ -55,6 +55,11 @@ html {
     font-size:14px;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 /** Start Home Page **/
 header{
     background-color: black;
@@ -84,7 +89,6 @@ header{
     position: relative;
     padding: 20px 30px;
     color: white;
-    text-decoration: none;
     font-weight: 400;
     font-size: 22px;
     width: fit-content;
@@ -345,7 +349,6 @@ header{
 }
 
 .project-section .description a{
-    text-decoration: none;
     color: #FCDAD8;
     border: 1px solid #FCDAD8;
     width: 167px;
@@ -579,7 +582,6 @@ header{
 .share .carts .cart a{
     background: #D78079;
     padding: 10px 53px;
-    text-decoration: none;
     color: #FCDAD8;
 }
 
@@ -606,7 +608,6 @@ footer ul a{
     color: #FCDAD8;
     font-family: 'dahab';
     font-size: 32px;
-    text-decoration: none;
     padding: 10px 20px;
 }
 
@@ -674,6 +675,7 @@ footer form button{
     font-family: 'omnia';
     font-size: 24px;
     font-weight: 500;
+    margin: 0 60px;
 }
 
 .methodology{
@@ -773,7 +775,6 @@ footer form button{
 }
 
 .studies .study a{
-    text-decoration: none;
     border: 2px solid #FCDAD8;
     color: #FCDAD8;
     padding: 10px 20px;
@@ -823,7 +824,6 @@ footer form button{
 
 .goal a{
     background: #FCDAD8;
-    text-decoration: none;
     color: #D78079;
     font-family: 'dahab';
     font-size: 25px;
@@ -832,3 +832,208 @@ footer form button{
 }
 
 /** end truthfullness index page **/
+
+
+/** Start Mokhber Page **/
+.mokhber-header{
+    background-image: url("assets/images/mokhber_bg.png");
+    background-size: cover;
+    padding-bottom: 1px;
+}
+
+.mokhber-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 576px){
+    .mokhber-nav{
+        width: auto;
+        flex-wrap: wrap;
+    }
+}
+
+.mokhber-nav a{
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+.mokhber-nav a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+}
+
+.mokhber-nav a:hover,
+.mokhber-nav a:focus{
+    color: white;
+}
+
+.mokhber-nav a:hover::after{
+    width: 100%;
+}
+
+.ta7kik .date,
+.ta7kik .author,
+.ta7kik .country{
+    font-family: 'omnia';
+}
+
+
+
+.full-page-ta7kik{
+    position: relative;
+    height: 335px;
+}
+
+.full-page-ta7kik .bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.full-page-ta7kik .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding: 100px 0;
+}
+
+.full-page-ta7kik .meta{
+    flex: 1;
+}
+
+.full-page-ta7kik .category{
+    flex: 50%;
+    align-self: flex-start;
+}
+
+.full-page-ta7kik .meta{
+    flex: 70%
+}
+
+.ta7kik a{
+    font-family: 'dahab';
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+}
+
+.ta7kik-overlay{
+    width: 100%;
+    height: 100%;
+    background: #D8BBB894;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.ta7kik .author{
+    position: relative;
+}
+
+.ta7kik .author,
+.ta7kik .date{
+    padding: 0 5px;
+}
+
+
+.ta7kik .author::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 26px;
+    top: 0;
+    left: -1%;
+}
+
+.half-page-ta7kik{
+    position: relative;
+    display: flex;
+}
+
+.half-page-ta7kik .ta7kik{
+    width: 50%;
+    position: relative;
+    height: 335px;
+}
+
+.half-page-ta7kik .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.half-page-ta7kik .ta7kik{
+    padding: 20px;
+}
+.half-page-ta7kik .ta7kik .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.half-page-ta7kik .ta7kik .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.half-page-ta7kik .ta7kik:nth-child(odd) .text,
+.full-page-ta7kik:nth-child(odd) .text{
+    color: #FCDAD8;
+}
+
+.half-page-ta7kik .ta7kik:nth-child(odd)  .ta7kik .author::after,
+.full-page-ta7kik:nth-child(odd)  .ta7kik .author::after {
+    background: #FCDAD8;
+}
+
+
+.half-page-ta7kik .ta7kik:nth-child(even)  .author::after,
+.full-page-ta7kik:nth-child(even)  .ta7kik .author::after {
+    background: #016477;
+}
+
+.half-page-ta7kik .ta7kik:nth-child(even) .text,
+.full-page-ta7kik:nth-child(even) .text {
+    color: #016477;
+}
+
+.half-page-ta7kik .ta7kik:nth-child(even) .category svg,
+.full-page-ta7kik:nth-child(even) .category svg{
+    fill: #016477;
+}
+
+.half-page-ta7kik .ta7kik:nth-child(odd) .category svg,
+.full-page-ta7kik:nth-child(odd) .category svg{
+    fill: #FCDAD8;
+}
+
+.half-page-ta7kik .ta7kik:nth-child(odd) .ta7kik-overlay,
+.full-page-ta7kik:nth-child(odd) .ta7kik-overlay{
+    background: #0164771C
+}
+
+.half-page-ta7kik .ta7kik:nth-child(even)  .ta7kik-overlay,
+.full-page-ta7kik:nth-child(even)  .ta7kik-overlay {
+    background: #D8BBB894;
+}
+
+/** End Mokhber Page **/
