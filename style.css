@@ -424,14 +424,18 @@ header{
     position: relative;
 }
 
-.how .title{
+.title{
     position: relative;
     height: 50px;
-    display: flex;
+    transform: translateX(50px);
 }
 
-.how svg{
-    transform: translateY(-50px);
+.title svg{
+    transform: translateY(-27px)
+}
+
+.title h1{
+    display: inline;
 }
 
 .how h1{
@@ -675,7 +679,7 @@ footer form button{
     font-family: 'omnia';
     font-size: 24px;
     font-weight: 500;
-    margin: 0 60px;
+    width: calc(100% / 2);
 }
 
 .methodology{
@@ -1059,3 +1063,131 @@ footer form button{
 }
 
 /** End Mokhber Page **/
+
+
+/** Start Resources Page **/
+
+.resources-header{
+    background-image: url("assets/images/resources_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resources-title{
+    color: #FCDAD8;
+    font-family: 'dahab';
+    font-weight: 700;
+}
+
+
+#page-carousel .carousel-control-next, 
+#page-carousel .carousel-control-prev{
+    width: 5%;
+}
+
+
+#page-carousel .carousel-item-container{
+    display: flex;
+    background: #04252B;
+}
+
+#page-carousel .post{
+    width: 50%;
+    padding: 50px 80px;
+}
+
+#page-carousel .post h1{
+    color: #D78079;
+    font-family: 'dahab';
+    font-weight: 700;
+}
+
+#page-carousel .post p{
+    color: #D78079;
+    font-family: 'omnia';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#page-carousel .post a{
+    color: #D78079;
+    border: 2px solid #D78079;
+    padding: 0px 40px;
+    display: inline !important;
+    padding-bottom: 7px;
+    margin-top: 40px;
+}
+
+#page-carousel img{
+    width: 50%;
+    height: 450px;
+}
+
+
+
+.resources-carts{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resources-carts .cart{
+    position: relative;
+    width: 490px;
+    height: 330px;
+    padding: 20px;
+    margin: 71px;
+}
+
+
+
+.resources-carts .cart img{
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 100%;
+    height: 100%;
+}
+
+.resources-carts .cart a{
+    position: absolute;
+    bottom: 5%;
+    font-family: 'dahab';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.yemen-index-cart{
+    border: 2px solid #D78079;
+}
+
+.yemen-index-cart a{
+    color: #D78079;
+}
+
+.podcast-cart{
+    border: 2px solid #016477;
+}
+
+.podcast-cart a{
+    color: #016477;
+}
+
+.internet-cart,
+.journalism-cart{
+    border: 2px solid #000;
+}
+
+.internet-cart a,
+.journalism-cart a{
+    color: #000;
+}
+
+.journalism-cart{
+    border: 2px solid #000;
+}
+
+.journalism-cart a{
+    color: #000;
+}
+/** End Resources Page **/
