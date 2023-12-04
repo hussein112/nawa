@@ -19,9 +19,6 @@
     font-style: normal;
 }
 
-
-
-
 @font-face {
     font-family: 'omnia'; 
     src: local('dahab-black'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Medium.otf') format('opentype');
@@ -53,6 +50,7 @@ html {
     direction:rtl;
     font-family:"Droid Arabic Kufi", "Droid Sans", sans-serif;
     font-size:14px;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -64,15 +62,12 @@ a{
 }
 
 .navbar-toggler{
-    background: transparent !important;
-    border-color: white;
+    border: none;
 }
 
 .navbar-toggler:focus{
     box-shadow: none;
 }
-
-
 
 /** Start Home Page **/
 header{
@@ -217,7 +212,8 @@ header{
 
 @media (max-width: 768px){
     .about{
-        box-shadow: 17px -5px 0px 0 #FCDAD8;
+        box-shadow: none;
+        width: 100%;
     }
 }
 
@@ -390,12 +386,11 @@ header{
 
 @media (max-width: 768px) {
     .project-section{
-        flex-wrap: wrap-reverse;
         width: 100%;
     }
 
     .project-section .description p{
-        width: 100%;   
+        width: 75%;   
     }
 }
 
@@ -418,9 +413,16 @@ header{
     .project-section img{
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        border-top-right-radius: 120px;
+        border-bottom-right-radius: 120px;
+    }
+
+    .project-mokhber img,
+    .project-resources img{
+        border-top-left-radius: 120px;
+        border-bottom-left-radius: 120px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        width: 100%;
     }
 
     .project-section .description{
@@ -432,6 +434,7 @@ header{
 .how{
     position: relative;
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .how-bg{
@@ -474,7 +477,7 @@ header{
 .how .nawa-img{
     background-image: url('assets/images/nawa.png');
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 5%;
     z-index: -1;
     width: 408px;
@@ -486,6 +489,7 @@ header{
         width: 200px !important;
         height: 200px !important;
         background-size: cover;
+        margin-left: -120px
     }
 }
 
@@ -612,7 +616,7 @@ header{
     background: #D78079;
     padding: 10px 100px;
     color: #FCDAD8;
-    margin-top: 40px;
+    margin-top: 25px;
     display: block;
 }
 
@@ -700,6 +704,12 @@ footer form button{
     .about-index{
         flex-wrap: wrap;
     }
+
+    .about-index .left,
+    .about-index .right{
+        text-align: center;
+        margin: 30px 18px !important;
+    }
 }
 
 .about-index .left{
@@ -714,7 +724,6 @@ footer form button{
 .about-index .right,
 .about-index .left{
     color: #FCDAD8;
-    text-align: right;
     font-family: 'omnia';
     font-size: 24px;
     font-weight: 500;
@@ -750,7 +759,8 @@ footer form button{
 
 @media (max-width: 768px){
     .methodology .cart{
-        width: 100%;
+        width: 50%;
+        padding: 50px 0;
     }
 }
 
@@ -762,6 +772,7 @@ footer form button{
 
 .methodology .cart h2{
     font-weight: 700;
+    padding: 25px 0;
 }
 
 .methodology h2,
@@ -828,18 +839,12 @@ footer form button{
 
 .goal{
     background-color: #D78079;
+    overflow: hidden;
 }
 
 .goal .container{
     display: flex;
 }
-
-@media (max-width: 768px){
-    .goal .container{
-        flex-direction: column-reverse;
-    }
-}
-
 
 .goal .desc{
     padding: 100px 0;
@@ -855,7 +860,7 @@ footer form button{
 }
 @media (max-width: 768px){
     .goal img{
-        width: 100%;
+        margin-left: -98px;
     }
 }
 
@@ -908,6 +913,12 @@ footer form button{
     margin-top: 30px;
 }
 
+@media (max-width: 576px) {
+    .mokhber-nav a{
+        margin-left: 25px;
+    }
+}
+
 .mokhber-nav a::after{
     content: "";
     position: absolute;
@@ -955,6 +966,32 @@ footer form button{
     justify-content: space-around;
     height: 100%;
     padding: 100px 0;
+}
+
+@media (max-width: 576px){
+    .full-page-post .container{
+        flex-direction: column;
+        padding: 100px 20px !important;
+    }
+
+    .half-page-post{
+        flex-wrap: wrap;
+    }
+
+    .half-page-post .post{
+        width: 100% !important;
+    }
+
+    .half-page-post .post .top{
+        flex-direction: column-reverse;
+        align-items: flex-start !important;
+    }
+
+    .half-page-post .post .country,
+    .full-page-post .post .country{
+        margin-top: 20px;
+        display: block;
+    }
 }
 
 .full-page-post .meta{
@@ -1131,6 +1168,12 @@ footer form button{
     background: #04252B;
 }
 
+@media (max-width: 768px){
+    #page-carousel .carousel-item-container{
+        flex-direction: column-reverse;
+    }
+}
+
 #page-carousel .post{
     width: 50%;
     padding: 50px 80px;
@@ -1164,7 +1207,12 @@ footer form button{
     height: 450px;
 }
 
-
+@media (max-width: 768px){
+    #page-carousel img{
+        width: 100%;
+        height: 182.836px;
+    }
+}
 
 .resources-carts{
     padding: 100px 0;
@@ -1199,6 +1247,25 @@ footer form button{
     left: -10%;
     width: 371.75px;
     height: 239.545px;
+}
+
+@media (max-width: 576px){
+    .cart-container{
+        width: 319.394px;
+        height: 329.462px;
+    }
+    
+    .resources-carts .cart{
+        width: 312.333px;
+        height: 307.239px;
+    }
+    
+    
+    
+    .resources-carts .cart img{
+        width: 315.906px;
+        height: 239.545px;
+    }
 }
 
 .resources-carts .cart a{
@@ -1270,6 +1337,18 @@ footer form button{
     height: 304.688px;
 }
 
+@media (max-width: 576px){
+    .team .members .member{
+        width: 151.61px;
+        height: 235.37px;
+    }
+    
+    .team .members .member img{
+        width: 151.61px;
+        height: 182.813px;
+    }
+}
+
 .team .member .name{
     color: #FCDAD8;
     font-family: 'dahab';
@@ -1292,7 +1371,13 @@ footer form button{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 50px 0;
+    padding: 50px 30px;
+}
+
+@media (max-width: 768px){
+    .newsroom-graduates .section-title{
+        flex-direction: column;
+    }
 }
 
 .newsroom-graduates .section-title p,
@@ -1303,6 +1388,7 @@ footer form button{
 .newsroom-graduates .section-title h1{
     color: #FFF;
     font-family: 'dahab';
+    font-weight: 700;
 }
 
 .newsroom-graduates .section-title p{

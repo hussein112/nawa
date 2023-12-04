@@ -1,7 +1,7 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"/> </g>
-</svg>
+<svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 66032">
+<path id="Vector" d="M27.0801 0.446777H2.79641C1.28626 0.446777 0.0576172 1.30204 0.0576172 2.35465C0.0576172 3.40592 1.28626 4.26123 2.79641 4.26123H27.0801C28.5902 4.26123 29.8188 3.40592 29.8188 2.35465C29.8188 1.30204 28.5902 0.446777 27.0801 0.446777Z" fill="white"/>
+<path id="Vector_2" d="M27.0801 9.73779H2.79641C1.28626 9.73779 0.0576172 10.5931 0.0576172 11.6457C0.0576172 12.6969 1.28626 13.5522 2.79641 13.5522H27.0801C28.5902 13.5522 29.8188 12.6969 29.8188 11.6457C29.8188 10.5931 28.5902 9.73779 27.0801 9.73779Z" fill="white"/>
+<path id="Vector_3" d="M27.0801 19.0286H2.79641C1.28626 19.0286 0.0576172 19.8839 0.0576172 20.9364C0.0576172 21.9877 1.28626 22.843 2.79641 22.843H27.0801C28.5902 22.843 29.8188 21.9877 29.8188 20.9364C29.8188 19.8839 28.5902 19.0286 27.0801 19.0286Z" fill="white"/>
+</g>
+</svg>
