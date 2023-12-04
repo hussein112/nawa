@@ -950,6 +950,7 @@ footer form button{
 .full-page-post{
     position: relative;
     height: 335px;
+    overflow: hidden;
 }
 
 .full-page-post .bg{
@@ -958,7 +959,20 @@ footer form button{
     z-index: -1;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
+
+.half-page-post .bg{
+    transition: .3s;
+}
+
+.post:hover + .bg{
+    scale: 1.2;
+}
+.post:hover > .bg{
+    scale: 1.2;
+}
+
 
 .full-page-post .container{
     display: flex;
@@ -1052,6 +1066,7 @@ footer form button{
     width: 50%;
     position: relative;
     height: 335px;
+    overflow: hidden;
 }
 
 .half-page-post .bg{
