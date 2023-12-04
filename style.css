@@ -431,8 +431,7 @@ header{
 
 .how{
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding: 100px 0;
 }
 
 .how-bg{
@@ -695,6 +694,7 @@ footer form button{
 .about-index{
     display: flex;
     justify-content: center;
+    padding: 70px 0;
 }
 @media (max-width: 768px){
     .about-index{
@@ -1153,9 +1153,10 @@ footer form button{
     color: #D78079;
     border: 2px solid #D78079;
     padding: 0px 40px;
-    display: inline !important;
     padding-bottom: 7px;
-    margin-top: 40px;
+    margin-top: 50px;
+    display: block;
+    width: fit-content;
 }
 
 #page-carousel img{
