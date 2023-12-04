@@ -59,14 +59,38 @@ a{
     text-decoration: none;
 }
 
+.navbar-toggler-icon{
+    background-image: url("assets/icons/menu.svg");
+}
+
+.navbar-toggler{
+    background: transparent !important;
+    border-color: white;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
 
 /** Start Home Page **/
 header{
     background-color: black;
 }
+.responsive-logo{
+    width: 70px;
+    height: 50px;
+    display: none;
+}
 
-.navbar-toggler{
-    background: white;
+@media (max-width: 992px){
+    .responsive-logo{
+        display: block !important;
+    }   
+    .navbar-brand{
+        display: none;
+    }
 }
 
 .h-n-a::after{
@@ -859,7 +883,6 @@ footer form button{
 .mokhber-nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
     width: 500px;
     margin-bottom: 50px;
 }
@@ -877,6 +900,8 @@ footer form button{
     color: white;
     font-family: 'dahab';
     font-size: 25px;
+    margin-left: 17px;
+    margin-top: 30px;
 }
 
 .mokhber-nav a::after{
@@ -1219,6 +1244,8 @@ footer form button{
 
 .team .members .member{
     margin: 20px;
+    width: 252.684px;
+    height: 392.283px;
 }
 
 .team .members .member img{
