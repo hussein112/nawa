@@ -117,6 +117,7 @@ header{
     font-size: 22px;
     width: fit-content;
     font-family: 'dahab';
+    margin-left: 25px
 }
 
 
@@ -569,7 +570,8 @@ header{
     position: relative;
     padding: 20px;
     border-radius: 29px;
-    width: calc(95% / 3);
+    width: 381.706px;
+    height: 436.166px;
     text-align: center;
     background-color: #FFF2F1;
     border: 1px solid #FA635C;
@@ -609,8 +611,10 @@ header{
 
 .share .carts .cart a{
     background: #D78079;
-    padding: 10px 53px;
+    padding: 10px 100px;
     color: #FCDAD8;
+    margin-top: 40px;
+    display: block;
 }
 
 
@@ -900,7 +904,7 @@ footer form button{
     color: white;
     font-family: 'dahab';
     font-size: 25px;
-    margin-left: 17px;
+    margin-left: 50px;
     margin-top: 30px;
 }
 
@@ -1167,27 +1171,38 @@ footer form button{
     flex-wrap: wrap;
 }
 
+@media (max-width: 992px){
+    .resources-carts{
+        justify-content: center;
+    }
+}
+
+.cart-container{
+    width: 396.946px;
+    height: 329.462px;
+    margin: 10px;
+}
+
 .resources-carts .cart{
     position: relative;
-    width: 389.394px;
-    height: 329.462px;
+    width: 362.333px;
+    height: 307.239px;
     padding: 20px;
-    margin: 71px;
 }
 
 
 
 .resources-carts .cart img{
     position: absolute;
-    top: -20%;
-    left: -20%;
-    width: 100%;
-    height: 100%;
+    top: -10%;
+    left: -10%;
+    width: 371.75px;
+    height: 239.545px;
 }
 
 .resources-carts .cart a{
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     font-family: 'dahab';
     font-size: 25px;
     font-weight: 700;
@@ -1257,7 +1272,7 @@ footer form button{
 .team .member .name{
     color: #FCDAD8;
     font-family: 'dahab';
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
 }
 
