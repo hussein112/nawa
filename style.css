@@ -235,6 +235,10 @@ header{
     margin: auto;
 }
 
+.projects-projects{
+    overflow: hidden;
+}
+
 .projects svg{
     margin-bottom: 50px;
     margin-top: 10px;
@@ -296,7 +300,7 @@ header{
 
 @media (max-width: 576px) { 
     .projects h1::after {
-        width: 50vw;
+        width: 46vw;
     }
 }
 
@@ -382,6 +386,12 @@ header{
     font-family: 'omnia';
     color: #FCDAD8;
     font-size: 24px;
+}
+
+@media (max-width: 576px){
+    .project-section .description p{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -825,7 +835,7 @@ footer form button{
 .studies .study h2{
     color: #FCDAD8;
     font-family: 'omnia';
-    margin-top: 10px;
+    margin: 25px 0;
 }
 
 .studies .study a{
@@ -834,6 +844,16 @@ footer form button{
     padding: 10px 20px;
     display: block;
     width: fit-content;
+}
+
+@media (max-width: 576px){
+    .studies{
+        text-align: center;
+    }
+
+    .studies .study a{
+        margin: auto;
+    }
 }
 
 
