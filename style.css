@@ -239,6 +239,15 @@ header{
     overflow: hidden;
 }
 
+@media (min-width: 1400px){
+    .projects-projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .projects svg{
     margin-bottom: 50px;
     margin-top: 10px;
@@ -257,28 +266,10 @@ header{
     position: absolute;
     top: 120%;
     right: -33%;
-    height: 1668px;
+    height: 1536.754px;
     width: 2px;
     background-color: #FCDAD8;
     transform: translateX(-50%);
-}
-
-@media (max-width: 992px){
-    .projects h1::before {
-        height: 2000px;
-    }
-}
-
-@media (max-width: 768px){
-    .projects h1::before {
-        height: 2500px;
-    }
-}
-
-@media (max-width: 576px){
-    .projects h1::before {
-        height: 3000px;
-    }
 }
 
 .projects h1::after {
@@ -287,53 +278,30 @@ header{
     top: 50%;
     left: 0;
     height: 2px;
-    width: 800px;
+    width: 70vw;
     background-color: #FCDAD8;
     transform: translateX(-103%);
 }
 
-@media (max-width: 300px) { 
-    .projects h1::after {
-        width: 100%;
+@media (max-width: 992px){
+    .projects h1::after{
+        width: 50vw;
     }
 }
+
 
 @media (max-width: 576px) { 
     .projects h1::after {
-        width: 46vw;
+        width: 30VW;
     }
 }
 
-@media (min-width: 577px) { 
+@media (max-width: 300px) { 
     .projects h1::after {
-        width: 350px;
+        width: 5vw;
     }
 }
 
-
-@media (min-width: 768px) {
-    .projects h1::after {
-        width: 500px;
-    }
-}
-
-@media (min-width: 992px) { 
-    .projects h1::after {
-        width: 700px;
-    }
-}
-
-@media (min-width: 1000px) { 
-    .projects h1::after {
-        width: 750px;
-    }
-}
-
-@media (min-width: 1200px) { 
-    .projects h1::after {
-        width: 900px;
-    }
-}
 
 .projects-projects::after{
     content: "";
@@ -348,6 +316,12 @@ header{
     width: 90%;
     float: left;
     margin: 20px 0;
+}
+
+@media (min-width: 1400px){
+    .project-section{
+        width: 1244.622px;
+    }
 }
 
 .project-section::after{
@@ -378,7 +352,21 @@ header{
 
 .project-section .description{
     width: 40%;
-    margin: 0 10%;
+    margin: 0 5%;
+}
+
+.project-section .description h2,
+.project-section .description p,
+.project-section .description a{
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .project-section .description h2,
+    .project-section .description p,
+    .project-section .description a{
+        margin: 24px;
+    }
 }
 
 .project-section .description a{
@@ -397,10 +385,6 @@ header{
 }
 
 @media (max-width: 768px) {
-    .project-section{
-        width: 100%;
-    }
-
     .project-section .description p{
         width: 100%;   
     }
@@ -466,7 +450,13 @@ header{
 .title{
     position: relative;
     height: 50px;
-    transform: translateX(50px);
+}
+
+@media (max-width: 400px){
+    .title{
+        min-height: 50px; 
+        height: auto;
+    }
 }
 
 .title svg{
@@ -585,12 +575,13 @@ header{
     position: relative;
     padding: 20px;
     border-radius: 29px;
-    width: 381.706px;
-    height: 436.166px;
+    width: calc(90% / 3);
+    min-height: 436.166px;
     text-align: center;
     background-color: #FFF2F1;
     border: 1px solid #FA635C;
 }
+
 @media (max-width: 768px){
     .share .carts{
         flex-direction: column;
@@ -632,6 +623,20 @@ header{
     display: block;
 }
 
+@media (max-width: 576px) { 
+    .share .carts .cart a {
+        padding: 8px 51px;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) { 
+    .share .carts .cart a {
+        padding: 8px 51px;
+    }
+}
+
 
 footer{
     background: black;
@@ -642,6 +647,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 576px) { 
+    .footer {
+        flex-direction: column;
+    }
 }
 
 footer .right,
@@ -780,7 +791,56 @@ footer form button{
     padding: 50px;
     border: 2px solid #D78079;
     border-radius: 23px;
+    position: relative;
 }
+
+.methodology .cart .icon::after{
+    position: absolute;
+    right: -44%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 40%;
+    background-image: linear-gradient(to right, #D78079 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 33px 1px;
+    background-repeat: repeat-x;
+    height: 4px;
+}
+
+@media (min-width: 1200px){
+    .methodology .cart .icon::after{
+        width: 48%;
+    }
+}
+
+.methodology .cart:first-of-type .icon::after{
+    content: none;
+}
+
+@media (max-width: 992px){
+    .methodology .cart .icon{
+        padding: 30px !important;
+    }
+}
+
+@media (max-width: 576px){
+    .methodology .cart .icon{
+        padding: 10% !important;
+    }
+
+    .methodology .cart .icon img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .methodology .cart .icon::after{
+        content: none;
+    }
+}
+
 
 .methodology .cart h2{
     font-weight: 700;
@@ -823,16 +883,8 @@ footer form button{
 }
 
 .studies .study img{
-    width: 557.992px;
-    height: 423.505px;
+    width: 100%;
 }
-
-@media (max-width: 992px){
-    .studies .study img{
-        width: 100%;
-    }
-}
-
 
 .studies .study h2{
     color: #FCDAD8;
@@ -890,6 +942,12 @@ footer form button{
     color: #FCDAD8;
     font-family: 'omnia';
     font-size: 32px;
+}
+
+@media (max-width: 576px){
+    .goal p{
+        font-size: 25px;
+    }
 }
 
 .goal a{
@@ -1187,10 +1245,32 @@ footer form button{
     background-size: cover;
 }
 
+.resources{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px){
+    .resources{
+       text-align: center;
+    }
+}
+
+.resources-index{
+    padding: 20px 0 !important;
+}
+
 .resources-title{
     color: #FCDAD8;
     font-family: 'dahab';
     font-weight: 700;
+    margin: 10px 50px;
+}
+
+@media (min-width: 1400px){
+    .resources-title{
+        margin: 10px 132px;
+    }
 }
 
 
@@ -1215,6 +1295,13 @@ footer form button{
     width: 50%;
     padding: 50px 80px;
 }
+
+@media (max-width: 768px){
+    #page-carousel .post{
+        width: 100%;
+    }
+}
+
 
 #page-carousel .post h1{
     color: #D78079;
@@ -1246,8 +1333,14 @@ footer form button{
 
 @media (max-width: 768px){
     #page-carousel img{
-        width: 100%;
+        width: 284.167px;
         height: 182.836px;
+    }
+}
+
+@media (max-width: 300px){
+    #page-carousel img{
+        width: 100%;
     }
 }
 
@@ -1293,14 +1386,14 @@ footer form button{
     }
     
     .resources-carts .cart{
-        width: 312.333px;
+        width: 80%;
         height: 307.239px;
     }
     
     
     
     .resources-carts .cart img{
-        width: 315.906px;
+        width: 90%;
         height: 239.545px;
     }
 }
