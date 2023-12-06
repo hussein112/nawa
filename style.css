@@ -723,7 +723,7 @@ footer form button{
 /** start truthfullness index page **/
 
 .index-header{
-    background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/563f1b47-9c57-4a03-bf2d-245a809bdd3e?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&amp;");
+    background-image: url("assets/images/index_bg.jpg");
     background-size: cover;
 }
 .about-index{
@@ -763,7 +763,7 @@ footer form button{
 
 .methodology{
     padding: 100px 17px;
-    background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/6881ae05-22cd-478f-bb02-2cfb2a302194?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&width=1600");
+    background-image: url(assets/images/methodologY_bg.png);
     text-align: center;
 }
 
@@ -935,33 +935,42 @@ footer form button{
     display: flex;
 }
 
+@media (min-width: 1200px){
+    .goal .container{
+        justify-content: center;
+    }
+}
+
 .goal .desc{
     padding: 100px 0;
 }
 @media (max-width: 768px){
     .goal .desc{
         margin-top: 0;
-        padding: 20px 0;
+        padding: 60px 0;
     }
 }
 .goal img{
-    width: 50%;
-}
-@media (max-width: 768px){
-    .goal img{
-        margin-left: -98px;
-    }
+    width: 653.945px;
 }
 
 .goal p{
     color: #FCDAD8;
     font-family: 'omnia';
     font-size: 32px;
+    width: 500px;
+}
+
+@media (max-width: 768px){
+    .goal p{
+        width: 300px;
+    }
 }
 
 @media (max-width: 576px){
     .goal p{
         font-size: 25px;
+        width: 180px;
     }
 }
 
@@ -1121,6 +1130,7 @@ footer form button{
     font-size: 30px;
     font-weight: 700;
     display: block;
+    line-height: 30px;
 }
 
 .post-overlay{
@@ -1188,6 +1198,11 @@ footer form button{
     flex-direction: column;
 }
 
+.half-page-post .post .bottom div,
+.full-page-post .meta div{
+    margin-top: 30px;
+}
+
 .half-page-post:nth-child(even){
     flex-direction: row-reverse;
 }
@@ -1197,21 +1212,23 @@ footer form button{
     color: #FCDAD8;
 }
 
+.half-page-post .post:nth-child(even) .text,
+.full-page-post .post:nth-child(even) .text {
+    color: #016477;
+}
+
 .half-page-post .post:nth-child(odd)  .post .author::after,
 .full-page-post:nth-child(odd)  .post .author::after {
     background: #FCDAD8;
 }
 
 
-.half-page-post .post:nth-child(even)  .author::after,
+.half-page-post:nth-child(even) .post .author::after,
 .full-page-post:nth-child(even)  .post .author::after {
     background: #016477;
 }
 
-.half-page-post .post:nth-child(even) .text,
-.full-page-post:nth-child(even) .text {
-    color: #016477;
-}
+
 
 .half-page-post .post:nth-child(even) .category svg,
 .full-page-post:nth-child(even) .category svg{
@@ -1225,7 +1242,7 @@ footer form button{
 
 .half-page-post .post:nth-child(odd) .post-overlay,
 .full-page-post:nth-child(odd) .post-overlay{
-    background: #0164771C
+    background: #0164777D
 }
 
 .half-page-post .post:nth-child(even)  .post-overlay,
@@ -1233,13 +1250,13 @@ footer form button{
     background: #D8BBB894;
 }
 
-.half-page-post .post:nth-child(even)  .play svg,
-.full-page-post:nth-child(even) .play svg{
+.half-page-post .post:nth-child(odd)  .play svg,
+.full-page-post:nth-child(odd) .play svg{
     fill: #FCDAD8
 }
 
-.half-page-post .post:nth-child(odd)  .play svg,
-.full-page-post:nth-child(odd) .play svg{
+.half-page-post .post:nth-child(even)  .play svg,
+.full-page-post:nth-child(even) .play svg{
     fill: #016477
 }
 
@@ -1247,6 +1264,12 @@ footer form button{
 .post .play{
     float: left;
     margin-top: 50px;
+}
+
+@media (max-width: 576px){
+    .post .play{
+        margin-top: 0;
+    }
 }
 
 /** End Mokhber Page **/
