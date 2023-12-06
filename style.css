@@ -237,6 +237,7 @@ header{
 
 .projects-projects{
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 @media (min-width: 1400px){
@@ -387,6 +388,12 @@ header{
 @media (max-width: 768px) {
     .project-section .description p{
         width: 100%;   
+    }
+}
+
+@media (max-width: 576px) {
+    .project-section .description p{
+        margin: 0;
     }
 }
 
@@ -613,6 +620,7 @@ header{
 
 .share .carts .cart p{
     font-size: 25px;
+    padding: 25px 0;
 }
 
 .share .carts .cart a{
@@ -754,7 +762,7 @@ footer form button{
 }
 
 .methodology{
-    padding: 100px 0;
+    padding: 100px 17px;
     background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/6881ae05-22cd-478f-bb02-2cfb2a302194?apiKey=9044f5d8ba054393bc1ba3b5fea416ad&width=1600");
     text-align: center;
 }
@@ -782,8 +790,15 @@ footer form button{
 
 @media (max-width: 768px){
     .methodology .cart{
-        width: 50%;
+        width: 100%;
         padding: 50px 0;
+    }
+}
+
+@media (max-width: 768px){
+    .methodology .cart .icon{
+        width: 50%;
+        margin: auto;
     }
 }
 
@@ -1260,6 +1275,12 @@ footer form button{
     padding: 20px 0 !important;
 }
 
+@media (min-width: 768px){
+    .resources-index{
+        padding-bottom: 50px !important;
+    }
+}
+
 .resources-title{
     color: #FCDAD8;
     font-family: 'dahab';
@@ -1299,6 +1320,7 @@ footer form button{
 @media (max-width: 768px){
     #page-carousel .post{
         width: 100%;
+        padding: 50px 30px;
     }
 }
 
@@ -1309,11 +1331,16 @@ footer form button{
     font-weight: 700;
 }
 
+#page-carousel .post .title{
+    margin-top: 15px;
+}
+
 #page-carousel .post p{
     color: #D78079;
     font-family: 'omnia';
     font-size: 20px;
     font-weight: 500;
+    margin-top: 15px;
 }
 
 #page-carousel .post a{
@@ -1326,6 +1353,41 @@ footer form button{
     width: fit-content;
 }
 
+@media (max-width: 576px){
+    #page-carousel .post a{
+        padding: 10px;
+    }
+}
+
+.resource-title h1{
+    position: relative;
+}
+
+.resource-title h1::after{
+    content: url("assets/icons/test.svg");
+    transform: translate(184px, -22px);
+    position: absolute;
+}
+
+@media (max-width: 768px){
+    .resource-title h1::after{
+        content: url("assets/icons/test2.svg");
+        transform: translate(134px, -22px);
+    }
+}
+
+@media (max-width: 576px){
+    .resource-title h1::after{
+        transform: translate(125px, -22px);
+    }
+}
+
+@media (max-width: 300px){
+    .resource-title h1::after{
+        transform: translate(120px, -22px);
+    }
+}
+
 #page-carousel img{
     width: 50%;
     height: 450px;
@@ -1335,6 +1397,7 @@ footer form button{
     #page-carousel img{
         width: 284.167px;
         height: 182.836px;
+        padding: 0 80px;
     }
 }
 
@@ -1348,9 +1411,10 @@ footer form button{
     padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-@media (max-width: 992px){
+@media (max-width: 1200px){
     .resources-carts{
         justify-content: center;
     }
@@ -1525,6 +1589,12 @@ footer form button{
     color: #FFF;
     font-family: 'omnia';
     font-size: 25px;
+}
+
+@media (max-width: 768px){
+    .newsroom-graduates .section-title p{
+        margin-top: 25px;
+    }
 }
 
 .newsroom-graduates hr{
