@@ -785,7 +785,7 @@ footer form button{
 }
 
 .methodology .cart{
-    width: calc(70% / 3);
+    width: calc(55% / 3);
 }
 
 @media (max-width: 768px){
@@ -809,28 +809,9 @@ footer form button{
     position: relative;
 }
 
-.methodology .cart .icon::after{
-    position: absolute;
-    right: -44%;
-    top: 50%;
-    transform: translateY(-50%);
-    content: "";
-    width: 40%;
-    background-image: linear-gradient(to right, #D78079 33%, rgba(255,255,255,0) 0%);
-    background-position: bottom;
-    background-size: 33px 1px;
-    background-repeat: repeat-x;
-    height: 4px;
-}
-
-@media (min-width: 1200px){
-    .methodology .cart .icon::after{
-        width: 48%;
-    }
-}
-
-.methodology .cart:first-of-type .icon::after{
-    content: none;
+.methodology .cart .icon img{
+    width: 50px;
+    height: 50px;
 }
 
 @media (max-width: 992px){
@@ -849,6 +830,31 @@ footer form button{
         height: 50px;
     }
 }
+.methodology .cart .icon::after{
+    position: absolute;
+    right: -84%;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 86%;
+    background-image: linear-gradient(to right, #D78079 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 33px 1px;
+    background-repeat: repeat-x;
+    height: 4px;
+}
+
+@media (min-width: 1200px){
+    .methodology .cart .icon::after{
+        width: 87%;
+    }
+}
+
+.methodology .cart:first-of-type .icon::after{
+    content: none;
+}
+
+
 
 @media (max-width: 768px){
     .methodology .cart .icon::after{
@@ -935,6 +941,7 @@ footer form button{
 
 .goal .container{
     display: flex;
+    justify-content: space-around;
 }
 
 @media (min-width: 1200px){
@@ -953,7 +960,7 @@ footer form button{
     }
 }
 .goal img{
-    /* width: 653.945px; */
+    width: 553.945px !important;
     width: 200px;
 }
 
