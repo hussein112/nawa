@@ -109,7 +109,7 @@ header{
     padding: 20px 30px;
     color: white;
     font-weight: 400;
-    font-size: 22px;
+    /* font-size: 22px; */
     width: fit-content;
     font-family: 'dahab';
     margin-left: 25px
@@ -673,7 +673,7 @@ footer .left{
 footer ul a{
     color: #FCDAD8;
     font-family: 'dahab';
-    font-size: 32px;
+    /* font-size: 32px; */
     padding: 10px 20px;
 }
 
@@ -756,7 +756,7 @@ footer form button{
 .about-index .left{
     color: #FCDAD8;
     font-family: 'omnia';
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: 500;
     margin: 0 50px;
 }
@@ -769,7 +769,7 @@ footer form button{
 
 
 .methodology p{
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 .methodology .carts{
@@ -951,13 +951,14 @@ footer form button{
     }
 }
 .goal img{
-    width: 653.945px;
+    /* width: 653.945px; */
+    width: 200px;
 }
 
 .goal p{
     color: #FCDAD8;
     font-family: 'omnia';
-    font-size: 32px;
+    /* font-size: 32px; */
     width: 500px;
 }
 
