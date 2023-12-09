@@ -98,7 +98,9 @@ header{
     }
 }
 
-
+#latestarticles .carousel-item{
+    height: 449.133px
+}
 
 .landing-nav .navbar-nav .nav-item{
     margin: 0 10px;
@@ -112,7 +114,8 @@ header{
     font-size: 18px;
     width: fit-content;
     font-family: 'dahab';
-    margin-left: 25px
+    margin-left: 25px;
+    font-size: 25px;
 }
 
 
@@ -169,14 +172,16 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid #FCDAD8;
-    padding: 40px 10px;
+    border: 2px solid #FCDAD8;
+    padding: 50px 20px 80px 20px;
     text-align: center;
+    min-width: 700px;
 }
 
-
-#latestarticles .carousel-item .post .category{
-    margin: 20px;
+#latestarticles .carousel-item .post a{
+    color: #FCDAD8;
+    font-family: 'omnia';
+    margin-top: 25px;
 }
 
 #latestarticles .carousel-item .post img{
@@ -204,7 +209,6 @@ header{
     background: #2C3739;
     padding: 50px 0;
     font-weight: 900;
-    font-size: 25px;
     box-shadow: 17px -12px 0px 5px #FCDAD8;
     float: left;
     text-align: center;
@@ -221,13 +225,14 @@ header{
     position: relative;
     color: #FCDAD8;
     font-family: 'dahab';
+    font-size: 32px;
 }
 
 
 .projects{
     background-image: url('assets/pattern_1.png');
     background-size: cover;
-    clear: both;
+    margin-top: 247px;
     padding: 50px 0;
     position: relative;
 }
@@ -252,7 +257,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
 }
 
 #projects .project img{
@@ -270,9 +274,28 @@ header{
 #projects .project p{
     color: #FCDAD8;
     font-family: 'omnia';
-    font-size: 28px;
+    font-size: 24px;
     margin: 20px 0;
 }
+
+@media (max-width: 992px){
+    #projects .project p{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 768px){
+    #projects .project p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    #projects .project p{
+        font-size: 16px;
+    }
+}
+
 
 #projects .project a{
     border: 2px solid #FCDAD8;
@@ -481,7 +504,7 @@ header{
 
 .how{
     position: relative;
-    padding: 100px 0;
+    padding: 150px 0;
     overflow: hidden;
 }
 
@@ -531,7 +554,7 @@ header{
 .how .nawa-img{
     background-image: url('assets/images/nawa.png');
     position: absolute;
-    top: 2%;
+    top: 6%;
     left: 5%;
     z-index: -1;
     width: 408px;
@@ -599,14 +622,17 @@ header{
 }
 
 .how .cart h2{
-    font-family: 'omnia';
     color: #016477;
+    font-family: 'omnia';
+    font-size: 48px;
+    font-weight: 400;
 }
 
 .how .cart p{
-    font-family: 'omnia';
     color: #016477;
+    font-family: 'omnia';
     font-size: 20px;
+    font-weight: 500;
 }
 
 .share{
@@ -628,10 +654,14 @@ header{
     padding: 20px;
     border-radius: 29px;
     width: calc(90% / 3);
-    min-height: 436.166px;
+    min-height: 393.166px;
     text-align: center;
     background-color: #FFF2F1;
     border: 1px solid #FA635C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 768px){
@@ -641,6 +671,7 @@ header{
     .share .cart{
         width: 100% !important;
         margin: 60px 0;
+        min-height: 
     }
 
 }
@@ -664,16 +695,22 @@ header{
 }
 
 .share .carts .cart p{
-    font-size: 25px;
-    padding: 25px 0;
+    color: #016477;
+    text-align: center;
+    font-family: 'omnia';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.656px;
 }
 
 .share .carts .cart a{
     background: #D78079;
-    padding: 10px 100px;
     color: #FCDAD8;
-    margin-top: 25px;
+    margin: 25px auto;
     display: block;
+    padding: 15px 79px;
+    width: fit-content;
 }
 
 @media (max-width: 576px) { 
@@ -804,6 +841,11 @@ footer form button{
     font-size: 20px;
     font-weight: 500;
     margin: 0 50px;
+    flex: 50%;
+}
+
+#map{
+    height: 538.034px;
 }
 
 .methodology{
@@ -848,31 +890,31 @@ footer form button{
 }
 
 .methodology .cart .icon{
-    padding: 50px;
     border: 2px solid #D78079;
     border-radius: 23px;
     position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.methodology .cart .icon img{
-    width: 50px;
-    height: 50px;
+
+@media (max-width: 992px){
+    .methodology .cart .icon{
+        padding: 10px !important;
+    }
 }
 
 @media (max-width: 992px){
     .methodology .cart .icon{
-        padding: 30px !important;
+        padding: 10px !important;
     }
 }
 
 @media (max-width: 576px){
     .methodology .cart .icon{
         padding: 10% !important;
-    }
-
-    .methodology .cart .icon img{
-        width: 50px;
-        height: 50px;
     }
 }
 .methodology .cart .icon::after{
@@ -922,7 +964,7 @@ footer form button{
 
 .studies{
     background-color: black;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .studies .container{
@@ -955,17 +997,17 @@ footer form button{
 .studies .study .study-title{
     color: #FCDAD8;
     font-family: 'omnia';
-    margin: 25px 0;
-    display: block;
-    font-size: 18px;
+    font-size: 27px;
+    font-weight: 700;
 }
 
 .studies .study a:last-of-type{
     border: 2px solid #FCDAD8;
     color: #FCDAD8;
-    padding: 10px 20px;
+    padding: 10px 45px;
     display: block;
     width: fit-content;
+    margin-top: 30px;
 }
 
 @media (max-width: 576px){
@@ -986,12 +1028,12 @@ footer form button{
 
 .goal .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 @media (min-width: 1200px){
     .goal .container{
-        justify-content: center;
+        /* justify-content: center; */
     }
 }
 
@@ -1013,7 +1055,6 @@ footer form button{
     color: #FCDAD8;
     font-family: 'omnia';
     font-size: 20px;
-    width: 500px;
 }
 
 @media (max-width: 768px){
@@ -1035,7 +1076,7 @@ footer form button{
     font-family: 'dahab';
     font-size: 25px;
     font-weight: 400;
-    padding: 0 30px 10px 30px; 
+    padding: 0 60px 9px 60px; 
 }
 
 /** end truthfullness index page **/
@@ -1110,6 +1151,7 @@ footer form button{
     position: relative;
     height: 335px;
     overflow: hidden;
+    border: 1px solid black;
 }
 
 .full-page-post .bg{
@@ -1182,10 +1224,11 @@ footer form button{
 
 .post a{
     font-family: 'dahab';
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     display: block;
     line-height: 30px;
+    /* width: 500px; */
 }
 
 .post-overlay{
@@ -1239,8 +1282,11 @@ footer form button{
 }
 
 .half-page-post .post{
-    padding: 20px;
+    padding: 20px 100px;
+    border: 1px solid black;
 }
+
+
 .half-page-post .post .top{
     display: flex;
     align-items: center;
@@ -1251,6 +1297,7 @@ footer form button{
 .half-page-post .post .bottom{
     display: flex;
     flex-direction: column;
+    margin-top: 45px;
 }
 
 .half-page-post .post .bottom div,
@@ -1302,7 +1349,7 @@ footer form button{
 
 .half-page-post .post:nth-child(even)  .post-overlay,
 .full-page-post:nth-child(even)  .post-overlay {
-    background: #D8BBB894;
+    background: #E9C1BFA6;
 }
 
 .post .play svg{
