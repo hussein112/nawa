@@ -1387,6 +1387,7 @@ footer form button{
     background-image: url("assets/images/resources_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 500px;
 }
 
 .resources{
@@ -1415,12 +1416,7 @@ footer form button{
     font-family: 'dahab';
     font-weight: 700;
     margin: 10px 50px;
-}
-
-@media (min-width: 1400px){
-    .resources-title{
-        margin: 10px 132px;
-    }
+    font-size: 50px;
 }
 
 
@@ -1475,11 +1471,11 @@ footer form button{
 #page-carousel .post a{
     color: #D78079;
     border: 2px solid #D78079;
-    padding: 0px 40px;
     padding-bottom: 7px;
-    margin-top: 50px;
+    margin-top: 45px;
     display: block;
     width: fit-content;
+    padding: 15px 50px 20px;
 }
 
 @media (max-width: 576px){
@@ -1594,8 +1590,9 @@ footer form button{
 .resources-carts .cart a{
     position: absolute;
     bottom: 10%;
+    height: 67px;
     font-family: 'dahab';
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
 }
 
