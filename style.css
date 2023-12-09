@@ -182,6 +182,7 @@ header{
     color: #FCDAD8;
     font-family: 'omnia';
     margin-top: 25px;
+    width: auto;
 }
 
 #latestarticles .carousel-item .post img{
@@ -1228,7 +1229,7 @@ footer form button{
     font-weight: 700;
     display: block;
     line-height: 30px;
-    /* width: 500px; */
+    width: 500px;
 }
 
 .post-overlay{
