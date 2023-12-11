@@ -182,7 +182,12 @@ header{
     border: 2px solid #FCDAD8;
     padding: 50px 20px 80px 20px;
     text-align: center;
-    width: 80%;
+}
+
+@media (max-width: 992px){
+    #latestarticles .carousel-item .post{
+        width: 80%;        
+    }
 }
 
 @media (min-width: 992px){
@@ -234,11 +239,28 @@ header{
     width: 99%;
     position: relative;
     background: #2C3739;
-    padding: 50px 0;
+    padding: 25px 0;
     font-weight: 900;
     box-shadow: 17px -12px 0px 5px #FCDAD8;
     float: left;
     text-align: center;
+}
+
+@media (min-width: 1200px){
+    .about{
+        padding: 50px 0;
+    }
+}
+@media (max-width: 1200px){
+    .about{
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 992px){
+    .about{
+        padding: 26px 0;
+    }
 }
 
 @media (max-width: 768px){
@@ -290,6 +312,10 @@ header{
     color: #FCDAD8;
 }
 
+#projects{
+    padding-bottom: 50px;
+}
+
 #projects .project{
     padding: 0 29px;
     display: flex;
@@ -322,8 +348,9 @@ header{
     color: #FCDAD8;
     font-family: 'omnia';
     font-size: 24px;
-    margin: 20px 0;
+    margin: 20px;
     font-size: 28px;
+    text-align: center;
 }
 
 @media (max-width: 768px){
@@ -335,7 +362,7 @@ header{
 
 #projects .project a{
     border: 2px solid #FCDAD8;
-    padding: 15px 80px;
+    padding: 15px 100px;
     color: #FCDAD8;
     font-weight: 700;
 }
@@ -595,6 +622,13 @@ header{
     display: inline;
 }
 
+
+@media (min-width: 1030px){
+    .how-title{
+        transform: translateX(34px);
+    }
+}
+
 .how h1{
     color: #016477;
     font-family: 'dahab';
@@ -732,14 +766,32 @@ header{
     padding: 20px;
     border-radius: 29px;
     width: calc(90% / 3);
-    min-height: 393.166px;
+    min-height: 500px;
     text-align: center;
     background-color: #FFF2F1;
     border: 1px solid #FA635C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 1300px){
+    .share .carts .cart{
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 1200px){
+    .share .carts .cart{
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 992px){
+    .share .cart{
+        min-height: 560px !important;
+    }
 }
 
 @media (max-width: 768px){
@@ -749,7 +801,7 @@ header{
     .share .cart{
         width: 100% !important;
         margin: 60px 0;
-        min-height: 
+        min-height: 200px !important;
     }
 
 }
@@ -769,7 +821,7 @@ header{
 .share .carts .cart h2{
     font-weight: 700;
     font-size: 40px;
-    margin-top: 45px;
+    margin-top: 65px;
 }
 
 .share .carts .cart p{
@@ -778,8 +830,13 @@ header{
     font-family: 'omnia';
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
     line-height: 28.656px;
+}
+
+@media (max-width: 576px){
+    .share .carts .cart p{
+        margin-bottom: 25px;
+    }
 }
 
 .share .carts .cart a{
@@ -787,9 +844,21 @@ header{
     color: #FCDAD8;
     margin: 25px auto;
     display: block;
-    padding: 12px 79px;
+    padding: 12px 100px;
     width: fit-content;
     font-weight: 700;
+}
+
+@media (max-width: 992px){
+    .share .carts .cart a{
+        padding: 12px 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .share .carts .cart a{
+        padding: 12px 80px;
+    }
 }
 
 @media (max-width: 576px) { 
@@ -800,11 +869,6 @@ header{
     }
 }
 
-@media (max-width: 992px) { 
-    .share .carts .cart a {
-        padding: 8px 51px;
-    }
-}
 
 
 footer{
