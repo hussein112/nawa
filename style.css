@@ -203,6 +203,19 @@ header{
     justify-content: center;
 }
 
+.post .category .text{
+    margin-right: 10px;
+}
+
+.post .country{
+    font-size: 30px;
+}
+
+.post .author,
+.post .date{
+    font-size: 24px;
+}
+
 #latestarticles .carousel-item .post a{
     color: #FCDAD8;
     font-family: 'omnia';
@@ -1195,6 +1208,12 @@ footer form button{
     font-weight: 700;
 }
 
+@media (max-width: 576px){
+    .studies .study .study-title{
+        margin: 0 12px;
+    }
+}
+
 .studies .study a:last-of-type{
     border: 2px solid #FCDAD8;
     color: #FCDAD8;
@@ -1247,6 +1266,12 @@ footer form button{
     font-size: 26px;
 }
 
+@media (max-width: 992px){
+    .goal p{
+        width: 500px;
+    }
+}
+
 @media (max-width: 768px){
     .goal p{
         width: 300px;
@@ -1256,7 +1281,14 @@ footer form button{
 @media (max-width: 576px){
     .goal p{
         font-size: 25px;
-        width: 180px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 360px){
+    .goal p{
+        font-size: 25px;
+        width: 190px;
     }
 }
 
@@ -1346,6 +1378,12 @@ footer form button{
     border: 1px solid black;
 }
 
+@media (max-width: 768px){
+    .full-page-post{
+        height: auto;
+    }
+}
+
 .full-page-post .bg{
     position: absolute;
     top: 0;
@@ -1375,10 +1413,11 @@ footer form button{
     padding: 100px 0;
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
     .full-page-post .container{
         flex-direction: column;
-        padding: 100px 20px !important;
+        padding: 0;
+        padding: 50px 20px !important;
     }
 
     .half-page-post .post{
@@ -1397,19 +1436,25 @@ footer form button{
     }
 }
 
-.full-page-post .meta{
-    flex: 1;
-}
-
 .full-page-post .category{
     flex: 50%;
     align-self: flex-start;
 }
 
+@media (max-width: 768px){
+    .full-page-post .category{
+        flex: auto;
+    }
+}
+
 .full-page-post .meta{
     flex: 70%
 }
-
+@media (max-width: 768px){
+    .full-page-post .meta{
+        flex: auto;
+    }
+}
 .post a{
     font-family: 'dahab';
     font-size: 40px;
@@ -1425,10 +1470,8 @@ footer form button{
     }
 }
 
-@media (max-width: 992px){
-    .half-page-post .post a{
-        width: auto;
-    }
+.half-page-post .post a{
+    width: auto;
 }
 
 .post-overlay{
@@ -1455,7 +1498,7 @@ footer form button{
     content: "";
     position: absolute;
     width: 1px;
-    height: 26px;
+    height: 48px;
     top: 0;
     left: -1%;
 }
@@ -1467,7 +1510,7 @@ footer form button{
 
 @media (max-width: 768px){
     .half-page-post{
-        flex-wrap: wrap;
+        flex-direction: column !important;
     }
 }
 
@@ -1486,13 +1529,26 @@ footer form button{
     position: relative;
     height: 335px;
     overflow: hidden;
-    padding: 20px 100px;
+    padding: 50px 100px;
     border: 1px solid black;
+}
+
+@media (max-width: 992px){
+    .half-page-post .post{
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .half-page-post .post{
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px){
     .half-page-post .post{
-        padding: 20px;
+        padding: 20px 50px;
+        height: auto;
     }
 }
 
@@ -1509,7 +1565,7 @@ footer form button{
     margin-top: 45px;
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
     .half-page-post .post .bottom{
         margin-top: 0;
     }
