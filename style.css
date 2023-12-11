@@ -1240,12 +1240,6 @@ footer form button{
     justify-content: space-between;
 }
 
-@media (min-width: 1200px){
-    .goal .container{
-        /* justify-content: center; */
-    }
-}
-
 .goal .desc{
     padding: 100px 20px;
 }
