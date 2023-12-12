@@ -335,6 +335,14 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 380px;
+}
+
+@media (max-width: 576px){
+    #projects .project{
+        min-height: 550px;
+        height: auto;
+    }
 }
 
 #projects .project img{
@@ -364,6 +372,7 @@ header{
     margin: 20px;
     font-size: 28px;
     text-align: center;
+    line-height: 119.4%;
 }
 
 @media (max-width: 768px){
@@ -1471,7 +1480,6 @@ footer form button{
 .post-overlay{
     width: 100%;
     height: 100%;
-    background: #D8BBB894;
     position: absolute;
     top: 0;
     left: 0;
@@ -1565,6 +1573,8 @@ footer form button{
     }
 }
 
+
+
 .half-page-post .post .bottom div,
 .full-page-post .meta div{
     margin-top: 30px;
@@ -1607,7 +1617,9 @@ footer form button{
     fill: #FCDAD8;
 }
 
-.half-page-post .post:nth-child(odd) .post-overlay,
+
+
+/* .half-page-post .post:nth-child(odd) .post-overlay,
 .full-page-post:nth-child(odd) .post-overlay{
     background: #0164777D
 }
@@ -1615,7 +1627,7 @@ footer form button{
 .half-page-post .post:nth-child(even)  .post-overlay,
 .full-page-post:nth-child(even)  .post-overlay {
     background: #E9C1BFA6;
-}
+} */
 
 .post .play svg{
     cursor: pointer;
@@ -1681,7 +1693,7 @@ footer form button{
     font-family: 'dahab';
     font-weight: 700;
     margin: 10px 50px;
-    font-size: 50px;
+    font-size: 64px;
 }
 
 @media (max-width: 768px){
@@ -1832,19 +1844,30 @@ footer form button{
     padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media (max-width: 1200px){
-    .resources-carts{
-        justify-content: center;
-    }
 }
 
 .cart-container{
     width: 396.946px;
     height: 329.462px;
-    margin: 10px;
+    margin: 20px;
+}
+
+@media (max-width: 1300px){
+    .cart-container{
+        margin: 20px 86px;
+    }
+}
+
+@media (max-width: 1200px){
+    .cart-container{
+        margin: 20px 41px;
+    }
+}
+
+@media (max-width: 992px){
+    .cart-container{
+        margin: 20px auto;
+    }
 }
 
 .resources-carts .cart{
@@ -1866,20 +1889,21 @@ footer form button{
 
 @media (max-width: 576px){
     .cart-container{
-        width: 319.394px;
+        width: 389.394px;
         height: 329.462px;
     }
     
     .resources-carts .cart{
-        width: 80%;
+        width: 90%;
         height: 307.239px;
     }
     
     
     
     .resources-carts .cart img{
-        width: 90%;
+        width: 103%;
         height: 239.545px;
+        left: -12%;
     }
 }
 
@@ -1888,7 +1912,7 @@ footer form button{
     bottom: 10%;
     height: 67px;
     font-family: 'dahab';
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -1953,7 +1977,7 @@ footer form button{
     height: 304.688px;
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
     .team .members .member{
         width: 151.61px;
         height: 235.37px;
@@ -1968,7 +1992,7 @@ footer form button{
 .team .member .name{
     color: #FCDAD8;
     font-family: 'dahab';
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0;
 }
