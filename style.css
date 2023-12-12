@@ -1042,6 +1042,7 @@ footer form button{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 @media (max-width: 768px){
@@ -1150,7 +1151,7 @@ footer form button{
 
 .methodology .cart h2{
     font-weight: 700;
-    margin-top: 18px;
+    margin-top: 40px;
 }
 
 .methodology h2,
@@ -1164,10 +1165,6 @@ footer form button{
     font-size: 24px;
     margin-top: 30px;
     padding: 0 20px;
-}
-
-.carts p{
-    margin: 0;
 }
 
 .studies{
@@ -1186,7 +1183,14 @@ footer form button{
 .studies .container{
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px){
+    .studies .container{
+        align-items: unset;
+    }
 }
 
 @media (max-width: 768px){
@@ -1196,7 +1200,7 @@ footer form button{
 }
 
 .studies .study{
-    width: calc(80% / 2);
+    width: calc(95% / 2);
 }
 
 @media (max-width: 768px){
@@ -1213,7 +1217,7 @@ footer form button{
 .studies .study .study-title{
     color: #FCDAD8;
     font-family: 'omnia';
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -1230,6 +1234,8 @@ footer form button{
     display: block;
     width: fit-content;
     margin-top: 30px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 @media (max-width: 576px){
@@ -1242,6 +1248,14 @@ footer form button{
 .goal{
     background-color: #D78079;
     overflow: hidden;
+    height: 429.103px;
+}
+
+@media (max-width: 768px){
+    .goal{
+        height: auto;
+        min-height: 429.103px;
+    }
 }
 
 .goal .container{
@@ -1260,14 +1274,23 @@ footer form button{
 }
 .goal img{
     width: 553.945px !important;
-    width: 200px;
+    height: 429.103px;
+}
+
+@media (max-width: 768px){
+    .goal img{
+        height: auto;
+        min-height: 429.103px;
+    }
 }
 
 .goal p{
     color: #FCDAD8;
     font-family: 'omnia';
     font-size: 26px;
+    margin-left: 55px;
 }
+
 
 @media (max-width: 992px){
     .goal p{
@@ -1283,6 +1306,7 @@ footer form button{
 
 @media (max-width: 576px){
     .goal p{
+        margin-left: 0;
         font-size: 25px;
         width: 250px;
     }
@@ -1303,7 +1327,7 @@ footer form button{
     font-weight: 700;
     width: fit-content;
     display: block;
-    padding: 10px 37px;
+    padding: 10px 37px 14px 37px;
 }
 
 /** end truthfullness index page **/
@@ -1696,8 +1720,13 @@ footer form button{
     font-size: 64px;
 }
 
+.resource-title{
+    margin-top: 20px;
+}
+
 @media (max-width: 768px){
     .resource-title{
+        margin-top: 0;
         font-size: 35px;
     }
 }
@@ -1712,10 +1741,36 @@ footer form button{
 #page-carousel .carousel-item-container{
     display: flex;
     background: #04252B;
+    height: 500px;
+}
+
+@media (max-width: 1300px){
+    #page-carousel .carousel-item-container{
+        height: 550px;
+    }
+}
+
+@media (max-width: 1160px){
+    #page-carousel .carousel-item-container{
+        height: 650px;
+    }
+}
+
+@media (max-width: 955px){
+    #page-carousel .carousel-item-container{
+        height: 750px;
+    }
+}
+
+@media (max-width: 856px){
+    #page-carousel .carousel-item-container{
+        height: 850px;
+    }
 }
 
 @media (max-width: 768px){
     #page-carousel .carousel-item-container{
+        height: auto;
         flex-direction: column-reverse;
     }
 }
@@ -1758,7 +1813,7 @@ footer form button{
 #page-carousel .post p{
     color: #D78079;
     font-family: 'omnia';
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     margin-top: 15px;
 }
@@ -1809,22 +1864,22 @@ footer form button{
 }
 
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     #page-carousel img{
         height: 700px;
     }
-}
+} */
 
-@media (min-width: 992px){
+/* @media (min-width: 992px){
     #page-carousel img{
         height: 600px;
     }
-}
-@media (min-width: 1250px){
+} */
+/* @media (min-width: 1250px){
     #page-carousel img{
-        height: 451px;
+        height: 509px;
     }
-}
+} */
 
 
 @media (max-width: 768px){
@@ -1909,7 +1964,7 @@ footer form button{
 
 .resources-carts .cart a{
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     height: 67px;
     font-family: 'dahab';
     font-size: 32px;
