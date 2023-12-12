@@ -1999,10 +1999,12 @@ footer form button{
 
 .journalism-cart{
     border: 2px solid #000;
+    height: 321.239px !important;
 }
 
 .journalism-cart a{
     color: #000;
+    height: auto !important;
 }
 /** End Resources Page **/
 
