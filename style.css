@@ -1607,7 +1607,7 @@ footer form button{
 
 
 
-.half-page-post .post:nth-child(even) .category svg,
+/* .half-page-post .post:nth-child(even) .category svg,
 .full-page-post .post:nth-child(even) .category svg{
     fill: #016477;
 }
@@ -1615,7 +1615,7 @@ footer form button{
 .half-page-post .post:nth-child(odd) .category svg,
 .full-page-post .post:nth-child(odd) .category svg{
     fill: #FCDAD8;
-}
+} */
 
 
 
