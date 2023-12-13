@@ -259,20 +259,20 @@ header{
     text-align: center;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1400px){
     .about{
         padding: 50px 0;
     }
 }
 @media (max-width: 1200px){
     .about{
-        padding: 40px 0;
+        padding: 25px 0;
     }
 }
 
 @media (max-width: 992px){
     .about{
-        padding: 26px 0;
+        padding: 20px 0;
     }
 }
 
@@ -335,7 +335,14 @@ header{
 
 @media (max-width: 576px){
     #projects .project{
-        min-height: 550px;
+        min-height: 421px;
+        height: auto;
+    }
+}
+
+@media (max-width: 376px){
+    #projects .project{
+        min-height: 510px;
         height: auto;
     }
 }
@@ -792,22 +799,26 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-
+@media (min-width: 995px){
+    .share .carts .cart{
+        min-height: 527px;
+    }
+}
+@media (min-width: 1200px){
+    .share .carts .cart{
+        min-height: 450px;
+    }
+}
 @media (min-width: 1300px){
     .share .carts .cart{
         min-height: 400px;
     }
 }
 
-@media (min-width: 1200px){
-    .share .carts .cart{
-        min-height: 450px;
-    }
-}
 
 @media (max-width: 992px){
     .share .cart{
-        min-height: 560px !important;
+        min-height: 660px !important;
     }
 }
 
@@ -861,27 +872,16 @@ header{
     color: #FCDAD8;
     margin: 25px auto;
     display: block;
-    padding: 12px 100px;
+    padding: 1px 100px 10px 100px;
     width: fit-content;
     font-weight: 700;
     font-size: 30px;
+    font-family: 'dahab';
 }
 
-@media (max-width: 992px){
-    .share .carts .cart a{
-        padding: 12px 50px;
-    }
-}
-
-@media (max-width: 768px){
-    .share .carts .cart a{
-        padding: 12px 80px;
-    }
-}
-
-@media (max-width: 576px) { 
+@media (max-width: 387px) { 
     .share .carts .cart a {
-        padding: 8px 51px;
+        padding: 1px 50px 10px 50px;
         width: fit-content;
         margin: auto;
     }
@@ -973,6 +973,9 @@ footer form button{
     display: flex;
     justify-content: center;
     padding-top: 50px;
+}
+.truth-index{
+    padding: 50px 0;
 }
 @media (max-width: 768px){
     .about-index{
@@ -1213,7 +1216,7 @@ footer form button{
 .studies .study .study-title{
     color: #FCDAD8;
     font-family: 'omnia';
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 700;
 }
 
@@ -1262,6 +1265,15 @@ footer form button{
 .goal .desc{
     padding: 100px 20px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .goal .desc{
+        padding: 50px 20px;
+    }
+}
+
+
 @media (max-width: 768px){
     .goal .desc{
         margin-top: 0;
@@ -1340,7 +1352,7 @@ footer form button{
     display: flex;
     align-items: center;
     width: 500px;
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 576px){
@@ -1361,9 +1373,21 @@ footer form button{
     font-weight: 700;
 }
 
+@media (max-width: 500px) {
+    .mokhber-nav a{
+        margin-left: 50px;
+    }
+}
+
 @media (max-width: 576px) {
     .mokhber-nav a{
         margin-left: 25px;
+    }
+}
+
+@media (max-width: 395px){
+    .mokhber-nav a{
+        font-size: 18px;
     }
 }
 
@@ -1463,6 +1487,7 @@ footer form button{
 .full-page-post .category{
     flex: 50%;
     align-self: flex-start;
+    justify-content: flex-start;
 }
 
 @media (max-width: 768px){
@@ -1556,7 +1581,7 @@ footer form button{
     border: 1px solid black;
 }
 
-@media (max-width: 992px){
+@media (max-width: 1200px){
     .half-page-post .post{
         height: auto;
     }
@@ -1717,6 +1742,13 @@ footer form button{
     font-size: 64px;
 }
 
+@media (max-width: 576px){
+    .resources-title{
+        font-size: 35px;
+        margin: 10px 0;
+    }
+}
+
 .resource-title{
     margin-top: 20px;
 }
@@ -1749,19 +1781,20 @@ footer form button{
 
 @media (max-width: 1160px){
     #page-carousel .carousel-item-container{
-        height: 650px;
+        /* height: 650px; */
+        height: 600px;
     }
 }
 
 @media (max-width: 955px){
     #page-carousel .carousel-item-container{
-        height: 750px;
+        height: 668px;
     }
 }
 
 @media (max-width: 856px){
     #page-carousel .carousel-item-container{
-        height: 850px;
+        height: 735px;
     }
 }
 
@@ -1780,7 +1813,7 @@ footer form button{
 @media (max-width: 768px){
     #page-carousel .post{
         width: 100%;
-        padding: 50px 30px;
+        padding: 50px 40px;
     }
 }
 
@@ -1900,7 +1933,7 @@ footer form button{
     margin: 20px;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1400px){
     .cart-container{
         margin: 20px 86px;
     }
@@ -1937,7 +1970,8 @@ footer form button{
 
 @media (max-width: 576px){
     .cart-container{
-        width: 389.394px;
+        /* width: 389.394px; */
+        width: 342.394px;
         height: 329.462px;
     }
     
@@ -1962,6 +1996,12 @@ footer form button{
     font-family: 'dahab';
     font-size: 32px;
     font-weight: 700;
+}
+
+@media (max-width: 576px){
+    .resources-carts .cart a{
+        font-size: 30px;
+    }
 }
 
 .yemen-index-cart{
