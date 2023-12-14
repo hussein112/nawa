@@ -257,11 +257,11 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
       // Get all post elements
-      const posts = document.querySelectorAll('.posts .post');
-      const groups = Math.ceil(posts.length / 7);
-      console.log(groups);
-      for(let i = 0; i < groups; i++){// For each group
-        for(let j = 0; j < 7; j++){
+        const posts = document.querySelectorAll('.posts .post');
+        const groups = Math.ceil(posts.length / 7);
+        console.log(groups);
+        for(let i = 0; i < groups; i++){// For each group
+          for(let j = 0; j < 7; j++){
           switch(j){
             case 0:
               posts[i * 7].querySelector('.post-overlay').style.backgroundColor = "#D8BBB894";
@@ -269,6 +269,7 @@
                 text.style.color = '#016477';
               });
               posts[i * 7].querySelector(".category svg").style.fill = "#016477";
+              posts[i * 7].querySelector(".author").style.setProperty("--afterbg", "#016477");
               break;
             case 1:
               posts[i * 7 + 1].querySelector('.post-overlay').style.backgroundColor = "#0164771C";
@@ -276,6 +277,7 @@
                 text.style.color = '#FCDAD8';
               });
               posts[i * 7 + 1].querySelector(".category svg").style.fill = "#FCDAD8";
+              posts[i * 7 + 1].querySelector(".author").style.setProperty("--afterbg", "#FCDAD8");
               break;
             case 2:
               posts[i * 7 + 2].querySelector('.post-overlay').style.backgroundColor = "#E9C1BFA6";
@@ -283,6 +285,7 @@
                 text.style.color = '#016477';
               })
               posts[i * 7 + 2].querySelector(".category svg").style.fill = "#016477";
+              posts[i * 7 + 2].querySelector(".author").style.setProperty("--afterbg", "#016477");
               break;
             case 3:
               posts[i * 7 + 3].querySelector('.post-overlay').style.backgroundColor = "#0000004F";
@@ -290,6 +293,7 @@
                 text.style.color = '#FCDAD8';
               })
               posts[i * 7 + 3].querySelector(".category svg").style.fill = "#FCDAD8";
+              posts[i * 7 + 3].querySelector(".author").style.setProperty("--afterbg", "#FCDAD8");
               break;
             case 4:
               posts[i * 7 + 4].querySelector('.post-overlay').style.backgroundColor = "#3E3E3EA1";
@@ -297,6 +301,7 @@
                 text.style.color = '#FCDAD8';
               })
               posts[i * 7 + 4].querySelector(".category svg").style.fill = "#FCDAD8";
+              posts[i * 7 + 4].querySelector(".author").style.setProperty("--afterbg", "#FCDAD8");
               break;
             case 5:
               posts[i * 7 + 5].querySelector('.post-overlay').style.backgroundColor = "#0164777D";
@@ -304,6 +309,7 @@
                 text.style.color = '#FCDAD8';
               })
               posts[i * 7 + 5].querySelector(".category svg").style.fill = "#FCDAD8";
+              posts[i * 7 + 5].querySelector(".author").style.setProperty("--afterbg", "#FCDAD8");
               break;
             case 6:
               posts[i * 7 + 6].querySelector('.post-overlay').style.backgroundColor = "#D7807961";
@@ -311,11 +317,12 @@
                 text.style.color = '#016477';
               })
               posts[i * 7 + 6].querySelector(".category svg").style.fill = "#016477";
+              posts[i * 7 + 6].querySelector(".author").style.setProperty("--afterbg", "#016477");
               break;
           }
         }
-      }
-    })
+        }
+      })
     </script>
 
     <footer>
