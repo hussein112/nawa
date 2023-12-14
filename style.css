@@ -1650,12 +1650,7 @@ footer form button{
     background: var(--afterbg);
 }
 
-/* .half-page-post .post:nth-child(odd)  .author::after,
-.full-page-post:nth-child(odd)  .author::after {
-    background: #016477;
-}
-
-
+/*
 .half-page-post .post:nth-child(even) .author::after,
 .full-page-post:nth-child(even) .author::after {
     background: #FCDAD8;
