@@ -2173,3 +2173,55 @@ footer form button{
 }
 
 /** End Team Page **/
+
+/** Start About Page **/
+#about{
+    padding: 50px 0;
+}
+
+#about p{
+    font-size: 25px;
+    font-family: 'dahab';
+}
+#about h2{
+    font-family: 'omnia';
+    font-weight: 700;
+}
+
+.partners div{
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 576px){
+    .partners div{
+        flex-direction: column;
+    }
+
+    .partners div span{
+        margin-top: 40px;
+    }
+}
+
+
+.partners .medan,
+.partners .birmingham,
+.partners .sida{
+    width: 80px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.partners .medan{
+    background-image: url("assets/meedan-logo-black.png");
+}
+
+.partners .birmingham{
+    background-image: url("assets/Birmingham-City-University-.png");
+}
+
+.partners .sida{
+    background-image: url("assets/Sida_logo_color_neutral.png")
+}
+/** End About Page **/
