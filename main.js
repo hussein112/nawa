@@ -49,7 +49,6 @@ function preloadImages(urls, callback) {
   });
 }
 
-// Preload the images
 preloadImages(imageUrls, preloadedImages => {
   myCarousel.addEventListener('slide.bs.carousel', event => {
     projects.forEach(project => {
