@@ -42,7 +42,6 @@ function preloadImages(urls) {
   return images;
 }
 
-// Preload the images
 const preloadedImages = preloadImages(imageUrls);
 
 myCarousel.addEventListener('slide.bs.carousel', event => {
