@@ -392,14 +392,6 @@ header{
 }
 
 /*
-@media (min-width: 1400px){
-    .projects-projects{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
 
 .projects svg{
     margin-bottom: 50px;
