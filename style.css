@@ -335,14 +335,14 @@ header{
 
 @media (max-width: 576px){
     #projects .project{
-        min-height: 421px;
+        min-height: 450px;
         height: auto;
     }
 }
 
 @media (max-width: 376px){
     #projects .project{
-        min-height: 510px;
+        min-height: 523px;
         height: auto;
     }
 }
@@ -389,6 +389,12 @@ header{
     padding: 15px 100px;
     color: #FCDAD8;
     font-weight: 700;
+}
+
+@media (max-width: 576px){
+    #projects .project a{
+        padding: 15px 50px;
+    }
 }
 
 /*
