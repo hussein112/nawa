@@ -32,28 +32,36 @@ const imageUrls = [
 ];
 
 // Function to preload images
-function preloadImages(urls) {
+function preloadImages(urls, callback) {
   const images = [];
+  let loadedCount = 0;
+
   urls.forEach(url => {
     const img = new Image();
+    img.onload = () => {
+      loadedCount++;
+      if (loadedCount === urls.length) {
+        callback(images);
+      }
+    };
     img.src = url;
     images.push(img);
   });
-  return images;
 }
 
-const preloadedImages = preloadImages(imageUrls);
-
-myCarousel.addEventListener('slide.bs.carousel', event => {
-  projects.forEach(project => {
-    if (project.classList.contains('active') && project.classList.contains('first')) {
-      background.style.backgroundImage = `url('${preloadedImages[0].src}')`;
-    } else if (project.classList.contains('active') && project.classList.contains('mokhber')) {
-      background.style.backgroundImage = `url('${preloadedImages[1].src}')`;
-    } else if (project.classList.contains('active') && project.classList.contains('mawared')) {
-      background.style.backgroundImage = `url('${preloadedImages[2].src}')`;
-    } else if (project.classList.contains('active') && project.classList.contains('podcast')) {
-      background.style.backgroundImage = `url('${preloadedImages[3].src}')`;
-    }
+// Preload the images
+preloadImages(imageUrls, preloadedImages => {
+  myCarousel.addEventListener('slide.bs.carousel', event => {
+    projects.forEach(project => {
+      if (project.classList.contains('active') && project.classList.contains('first')) {
+        background.style.backgroundImage = `url('${preloadedImages[0].src}')`;
+      } else if (project.classList.contains('active') && project.classList.contains('mokhber')) {
+        background.style.backgroundImage = `url('${preloadedImages[1].src}')`;
+      } else if (project.classList.contains('active') && project.classList.contains('mawared')) {
+        background.style.backgroundImage = `url('${preloadedImages[2].src}')`;
+      } else if (project.classList.contains('active') && project.classList.contains('podcast')) {
+        background.style.backgroundImage = `url('${preloadedImages[3].src}')`;
+      }
+    });
   });
 });
