@@ -1938,6 +1938,32 @@ footer form button{
 }
 
 
+.resources-carts .cart-container:nth-child(4n+1) .cart{
+    border: 2px solid #D78079;
+}
+
+.resources-carts .cart-container:nth-child(4n+1) .cart a{
+    color: #D78079;
+}
+
+.resources-carts .cart-container:nth-child(4n+2) .cart{
+    border: 2px solid #016477;
+}
+
+.resources-carts .cart-container:nth-child(4n+2) .cart a{
+    color: #016477;
+}
+
+.resources-carts .cart-container:nth-child(4n+3) .cart,
+.resources-carts .cart-container:nth-child(4n+4) .cart{
+    border: 2px solid #000;
+}
+
+.resources-carts .cart-container:nth-child(4n+3) .cart a,
+.resources-carts .cart-container:nth-child(4n+4) .cart a{
+    color: #000;
+}
+
 
 .resources-carts .cart img{
     position: absolute;
@@ -1983,31 +2009,6 @@ footer form button{
     }
 }
 
-.yemen-index-cart{
-    border: 2px solid #D78079;
-}
-
-.yemen-index-cart a{
-    color: #D78079;
-}
-
-.podcast-cart{
-    border: 2px solid #016477;
-}
-
-.podcast-cart a{
-    color: #016477;
-}
-
-.internet-cart,
-.journalism-cart{
-    border: 2px solid #000;
-}
-
-.internet-cart a,
-.journalism-cart a{
-    color: #000;
-}
 
 .journalism-cart{
     border: 2px solid #000;
@@ -2213,3 +2214,30 @@ footer form button{
     background-image: url("assets/Sida_logo_color_neutral.png")
 }
 /** End About Page **/
+
+/** Start Article Page **/
+
+#article .meta h1{
+    font-family: 'omnia';
+    font-size: 40px;
+}
+
+#article .meta img{
+    width: 100%;
+    height: 500px;
+}
+
+#article .meta .date-author{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#article .meta .date-author{
+    font-family: 'dahab';
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/** End Article Page **/
