@@ -7,10 +7,10 @@ const myCarousel = document.getElementById('projects');
 
 // Array to store image URLs
 const imageUrls = [
-  'assets/images/projects/backgrounds/credibility-index.svg',
-  'assets/images/projects/backgrounds/mokhber.svg',
-  'assets/images/projects/backgrounds/mawared.svg',
-  'assets/images/projects/backgrounds/podcast.svg'
+  'assets/images/projects/backgrounds/pngs/1.jpg',
+  'assets/images/projects/backgrounds/pngs/mokhber.jpg',
+  'assets/images/projects/backgrounds/pngs/mawared.jpg',
+  'assets/images/projects/backgrounds/pngs/podcast.jpg'
 ];
 
 // Function to preload images
