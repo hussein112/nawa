@@ -1,4 +1,3 @@
-// Array to store image URLs
 const projects = document.querySelectorAll("#projects .carousel-item");
 const background = document.getElementById("projects-container");
 const next = document.querySelector(".projects .carousel-control-next");
