@@ -4,7 +4,6 @@ const next = document.querySelector(".projects .carousel-control-next");
 const prev = document.querySelector(".projects .carousel-control-prev");
 const myCarousel = document.getElementById('projects');
 
-// Array to store image URLs
 const imageUrls = [
   'assets/images/projects/backgrounds/1.jpg',
   'assets/images/projects/backgrounds/mokhber.jpg',
