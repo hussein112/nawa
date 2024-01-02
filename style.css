@@ -398,13 +398,6 @@ header{
 }
 
 /*
-.projects h1 {
-    position: relative;
-    display: inline-block;
-    font-family: 'omnia';
-    color: #FCDAD8;
-    font-size: 50px;
-}
 
 .projects h1::before {
     content: '';
