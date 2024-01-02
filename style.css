@@ -2021,6 +2021,49 @@ footer form button{
 }
 /** End Resources Page **/
 
+
+/** Start Nawa Team Page **/
+
+.nawa-team{
+    background: url("assets/logo.svg");
+}
+
+.nawa-team .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nawa-team .member{
+    background: #016477d1;
+    color: white;
+    width: calc(90% / 3);
+    padding: 25px;
+    margin: 20px 0;
+    transition: .3s;
+}
+
+.nawa-team .member:hover{
+    background: #016477;
+    transform: scale(1.2);
+}
+
+.nawa-team .member .name,
+.nawa-team .member .role{
+    font-family: 'dahab';
+    font-size: 2rem;
+    color: #FA635C;
+}
+
+.nawa-team .member .quote{
+    font-family: 'omnia';
+    font-size: 1.5rem;
+}
+
+/** End Nawa Team Page **/
+
+
 /** Start Team Page **/
 
 .team{
