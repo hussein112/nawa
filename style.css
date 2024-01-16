@@ -2277,3 +2277,122 @@ footer form button{
 }
 
 /** End Article Page **/
+
+
+/** Start Course Page **/
+.course-header{
+    background-color: #04252B;
+}
+.course-header .excerpt{
+    padding: 50px 0;
+    color: #FCDAD8;
+    margin-bottom: 0;
+}
+
+.course-content-title{
+    width: 100%;
+    background: #D78079;
+    padding: 20px 0;
+}
+
+.course-content-title h2{
+    color: #FFF;
+    font-family: 'dahab';
+    font-size: 32px;
+}
+
+.course-content{
+    margin: 50px auto;
+}
+
+.course-content .lesson{
+    margin: 25px 0;
+}
+
+.lesson-title{
+    height: 113.57px;
+    border: 2px solid #D78079;
+    padding: 0 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media (max-width: 576px){
+    .lesson-title{
+        padding: 0 10px;
+    }
+}
+
+.lesson-title h1{
+    color: #D78079;
+    font-family: 'dahab';
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.lesson-title .title svg{
+    transform: translateY(-19px);
+}
+
+.show{
+    border-radius: 5px;
+    border: 2px solid #D78079;
+    padding: 10px 24px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.show .arrow{
+    transition: .5s transform ease;
+}
+
+
+.show span{
+    color: #D78079;
+    font-family: 'dahab';
+    font-size: 24px;
+    font-weight: 700;
+    /* Dahab Font Issue */
+    padding-bottom: 6px;
+}
+
+.lesson .content{
+    max-height: 0px;
+    overflow: hidden;
+    transition: .5s max-height ease;
+}
+
+.lesson .content .lesson-content{
+    background-color: #016477;
+    padding: 20px 90px;
+    color: #FFF;
+    font-family: 'dahab';
+    font-size: 28px;
+    font-weight: 700;
+    gap: 10px;
+}
+
+
+.content .topics{
+    padding: 50px 80px;
+    background: #F0F0F0;
+}
+
+.content .topic{
+    background-color: #fff;
+    padding: 30px;
+    color: #D78079;
+    font-family: 'dahab';
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/** End Course Page **/
+
+
+/** Start Topic Page **/
+
+
+
+/** End Topic Page **/
