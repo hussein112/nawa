@@ -2392,7 +2392,39 @@ footer form button{
 
 
 /** Start Topic Page **/
+.topic-title{
+    width: 100%;
+    background: #016477;
+    padding: 20px 0;
+    color: #FFF;
+    font-family: 'dahab';
+    font-size: 28px;
+    font-weight: 700;
+}
 
+.topic-content{
+    padding: 50px 0;
+}
+
+.topic-content .next,
+.topic-content .previous{
+    margin-top: 50px;
+    padding: 10px;
+    /** Dahab Font Issue **/
+    padding-bottom: 18px;
+    border-radius: 5px;
+    border: 2px solid #D78079;
+    width: 200px;
+    text-align: center;
+}
+
+.topic-content .next span,
+.topic-content .previous span{
+    color: #D78079;
+    font-family: 'dahab';
+    font-size: 24px;
+    font-weight: 700;
+}
 
 
 /** End Topic Page **/
