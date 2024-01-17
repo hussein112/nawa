@@ -2392,6 +2392,19 @@ footer form button{
 
 
 /** Start Topic Page **/
+.lesson-header{
+    background-color: #04252B;
+}
+
+@media (max-width: 992px){
+    .lesson-header{
+        height: 65px;
+    }
+    
+    .lesson-header .landing-nav-container{
+        background-color: #04252B;
+    }   
+}
 .topic-title{
     width: 100%;
     background: #016477;
@@ -2416,6 +2429,13 @@ footer form button{
     border: 2px solid #D78079;
     width: 200px;
     text-align: center;
+}
+
+@media (max-width: 576px){
+    .topic-content .next,
+    .topic-content .previous{
+        width: 150px;
+    }
 }
 
 .topic-content .next span,
