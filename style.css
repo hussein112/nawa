@@ -2501,7 +2501,76 @@ footer form button{
 
 
 #tools-container{
-    background-color: red;
+    background-color: #FCF8F8;
+}
+
+#tools-container .show{
+    cursor: auto;
+    border: none;
+    padding: 0;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.tools-container-header button{
+    background-color: #016477 !important;
+    color: white !important;
+}
+
+.tools-container-header button::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.2903 6.61471C17.6819 7.01928 17.6819 7.67156 17.2903 8.07614L10.6486 14.9374C10.3369 15.2595 9.8334 15.2595 9.5217 14.9374L2.88006 8.07614C2.48843 7.67156 2.48843 7.01928 2.88006 6.6147C3.27168 6.21013 3.90308 6.21013 4.2947 6.6147L10.0892 12.5925L15.8836 6.60645C16.2672 6.21013 16.9066 6.21013 17.2903 6.61471Z' fill='white'/%3E%3C/svg%3E%0A");    
+}
+
+.tools-container-header button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.2903 6.61471C17.6819 7.01928 17.6819 7.67156 17.2903 8.07614L10.6486 14.9374C10.3369 15.2595 9.8334 15.2595 9.5217 14.9374L2.88006 8.07614C2.48843 7.67156 2.48843 7.01928 2.88006 6.6147C3.27168 6.21013 3.90308 6.21013 4.2947 6.6147L10.0892 12.5925L15.8836 6.60645C16.2672 6.21013 16.9066 6.21013 17.2903 6.61471Z' fill='white'/%3E%3C/svg%3E%0A");    
+}
+
+.tool-container{
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-radius: none;
+}
+
+.tool-container .accordion-item,
+.tool-container .accordion-button{
+    background-color: #FBFBFB;
+}
+
+.tool-container .accordion-button:focus,
+.tool-container .accordion-button:not(.collapsed){
+    color: black;
+}
+
+.tool-container .accordion-button:not(.colapsed)::after{
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+.tool-header .accordion-button{
+    flex-direction: row-reverse;
+}
+
+.tool-header .accordion-button::after{
+    position: absolute;
+    right: 15px;
+}
+
+.tool-container .price-link a{
+    color: #016477;
+    text-decoration: underline;
+    font-family: 'dahab';
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.price-link .price{
+    position: relative;
+}
+
+.price-link span{
+    position: absolute;
+    top: 0;
+    right: 9px;
 }
 
 /** End Tools Page **/
