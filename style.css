@@ -303,6 +303,7 @@ a{
 .post .date{
     font-size: 24px;
     padding: 0 5px;
+    color: white;
 }
 
 #latestarticles .carousel-item .post a{
@@ -1187,71 +1188,33 @@ footer form button{
 
 /** Start Mokhber Page **/
 .mokhber-header{
-    background-image: url("assets/images/mokhber_bg.png");
-    background-size: cover;
-    padding-bottom: 1px;
+    min-height: 200px;
 }
 
-.mokhber-nav{
+
+@media (max-width: 352px){
+    .landing-nav form{
+        order: 1;
+    }
+}
+
+
+.custom-tooltip{
+    --bs-tooltip-bg: #D77E78;
+    --bs-tooltip-max-width: 100%;
+    color: white;
+}
+
+.info-tooltip{
     display: flex;
-    align-items: center;
-    width: 500px;
+    flex-direction: row-reverse;
 }
 
-@media (max-width: 576px){
-    .mokhber-nav{
-        width: auto;
-        flex-wrap: wrap;
-    }
-}
-
-.mokhber-nav a{
-    position: relative;
-    padding: 20px 0;
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    margin-left: 43px;
-    margin-top: 30px;
-    font-weight: 500;
-}
-
-@media (max-width: 500px) {
-    .mokhber-nav a{
-        margin-left: 50px;
-    }
-}
-
-@media (max-width: 576px) {
-    .mokhber-nav a{
-        margin-left: 25px;
-    }
-}
-
-@media (max-width: 395px){
-    .mokhber-nav a{
-        font-size: 18px;
-    }
-}
-
-.mokhber-nav a::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 3px;
-    background-color: white;
-    transition: .5s;
-}
-
-.mokhber-nav a:hover,
-.mokhber-nav a:focus{
-    color: white;
-}
-
-.mokhber-nav a:hover::after{
-    width: 100%;
+.info-tooltip img{
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    margin-top: 50px;
 }
 
 .post .date,
@@ -1260,11 +1223,9 @@ footer form button{
     font-family: "Rubik", sans-serif;
 }
 
-
-
 .full-page-post{
     position: relative;
-    height: 335px;
+    height: 483px;
     overflow: hidden;
     border: 1px solid black;
 }
@@ -1275,10 +1236,10 @@ footer form button{
     }
 }
 
-.bg{
+/* .bg{
     filter: grayscale(1);
 }
-
+ */
 .full-page-post .bg{
     position: absolute;
     top: 0;
@@ -1289,26 +1250,23 @@ footer form button{
     object-fit: cover;
 }
 
-.half-page-post .bg{
+/* .half-page-post .bg{
     transition: .3s;
 }
 
-.post:hover + .bg{
-    scale: 1.2;
-    filter: grayscale(0);
-}
 .post:hover > .bg{
     scale: 1.2;
     filter: grayscale(0);
-}
+} */
 
 
 .full-page-post .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
     height: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 @media (max-width: 768px){
@@ -1336,16 +1294,19 @@ footer form button{
     }
 }
 
-.full-page-post .category{
-    flex: 50%;
-    align-self: flex-start;
-    justify-content: flex-start;
+.full-page-post .category-country{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
 }
 
-@media (max-width: 768px){
-    .full-page-post .category{
-        flex: auto;
-    }
+.full-page-post .category-country span{
+    font-size: 50px;
+    color: #D77E78;
+}
+
+.full-page-post .category-country span:last-of-type{
+    transform: translateY(-40px);
 }
 
 .full-page-post .meta{
@@ -1356,22 +1317,23 @@ footer form button{
         flex: auto;
     }
 }
+
+.full-page-post .date{
+    align-self: flex-end;
+}
+
 .post a{
     font-family: "Rubik", sans-serif;
-    font-size: 31px;
+    font-size: 48px;
     font-weight: 600;
+    line-height: 119.4%;
     display: block;
-    width: 600px;
+    width: 655px;
     padding: 10px 0;
+    color: white;
 }
 
 @media (max-width: 768px){
-    .post a{
-        width: auto;
-    }
-}
-
-@media (min-width: 1300px){
     .post a{
         width: auto;
     }
@@ -1395,15 +1357,38 @@ footer form button{
 
 .post-overlay{
     width: 100%;
-    height: 100%;
+    height: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
+    background-color: #00000090;
+    display: flex;
+    transition: .3s;
+    align-items: center;
+    justify-content: center;
 }
 
+.post-overlay p{
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-size: 40px;
+    line-height: 119.4%;
+    text-align: center;
+}
 
+.post:hover > .container{
+    display: none;
+}
 
+.post:hover > .post-overlay{
+    height: 100%;
+}
 
 
 .post .author-date-sep{
@@ -1506,16 +1491,6 @@ footer form button{
         margin-top: 0;
     }
 }
-
-
-
-.half-page-post .post .bottom div,
-.full-page-post .meta div{
-    margin-top: 30px;
-}
-
-
-
 
 .post .play svg{
     cursor: pointer;
