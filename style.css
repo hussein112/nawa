@@ -304,6 +304,9 @@ a{
     font-size: 24px;
     padding: 0 5px;
     color: white;
+    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
 }
 
 #latestarticles .carousel-item .post a{
@@ -1303,10 +1306,12 @@ footer form button{
 .full-page-post .category-country span{
     font-size: 50px;
     color: #D77E78;
+    font-weight: 800;
 }
 
 .full-page-post .category-country span:last-of-type{
     transform: translateY(-40px);
+    font-weight: 500;
 }
 
 .full-page-post .meta{
@@ -1331,6 +1336,9 @@ footer form button{
     width: 655px;
     padding: 10px 0;
     color: white;
+    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
 }
 
 @media (max-width: 768px){
