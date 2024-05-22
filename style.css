@@ -278,27 +278,6 @@ a{
     }
 }
 
-
-.post .category{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.post .category .text{
-    margin-right: 10px;
-    font-family: "Rubik", sans-serif
-}
-
-.post .country{
-    font-size: 30px;
-}
-
-.podcasts .post .country{
-    margin-top: -4px;
-    height: 45px;
-}
-
 .post .author,
 .post .date{
     font-size: 24px;
@@ -1230,19 +1209,18 @@ footer form button{
     position: relative;
     height: 483px;
     overflow: hidden;
-    border: 1px solid black;
 }
 
-@media (max-width: 768px){
+@media (max-width: 372px){
     .full-page-post{
-        height: auto;
+        height: 750px;
     }
 }
 
-/* .bg{
+.bg{
     filter: grayscale(1);
 }
- */
+
 .full-page-post .bg{
     position: absolute;
     top: 0;
@@ -1253,14 +1231,14 @@ footer form button{
     object-fit: cover;
 }
 
-/* .half-page-post .bg{
+.half-page-post .bg{
     transition: .3s;
 }
 
 .post:hover > .bg{
     scale: 1.2;
     filter: grayscale(0);
-} */
+}
 
 
 .full-page-post .container{
@@ -1393,6 +1371,12 @@ footer form button{
     text-align: center;
 }
 
+@media (max-width: 576px){
+    .post-overlay p{
+        font-size: 28px;
+    }
+}
+
 .post:hover > .container{
     display: none;
 }
@@ -1453,7 +1437,6 @@ footer form button{
     height: 355px;
     overflow: hidden;
     padding: 50px 100px;
-    border: 1px solid black;
 }
 
 .podcasts .half-page-post .post{
@@ -1530,6 +1513,55 @@ footer form button{
 
 /** End Mokhber Page **/
 
+/** Start Blog Page **/
+
+.blogs .full-page-post{
+    height: 645px;
+}
+
+@media (max-width: 372px){
+    .blogs .full-page-post{
+        height: 750px;
+    }
+}
+
+.blogs .full-page-post .date{
+    align-self: center;
+}
+
+.blogs .full-page-post .author{
+    background-color: #4b4b4ba6;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+.blogs .full-page-post .category{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 80px;
+}
+
+.blogs .full-page-post .category span{
+    font-family: "Rubik", sans-serif;
+    direction: ltr;
+    font-size: 50px;
+    color: #D77E78;
+    font-weight: 800;
+    -webkit-text-stroke: 0.1px #ffffff;
+    -webkit-text-stroke-color: #ffffff;
+    paint-order: stroke fill;
+}
+
+.blogs .full-page-post .category span:first-of-type{
+    margin-left: 40px;
+}
+
+.blogs .full-page-post .category span:nth-child(2){
+    transform: translateY(-45px);
+}
+
+/** End Blog Page **/
 
 /** Start Resources Page **/
 
