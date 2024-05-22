@@ -695,7 +695,7 @@ footer .left ul{
 }
 
 .footer .newsletter{
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 @media (max-width: 992px){
@@ -715,10 +715,6 @@ footer .left{
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.footer .left{
-    align-items: end;
 }
 
 .footer .left > a{
@@ -1283,11 +1279,7 @@ footer form button{
 
 .full-page-post .category-country span{
     font-size: 50px;
-    color: #D77E78;
     font-weight: 800;
-    -webkit-text-stroke: 0.5px #ffffff;
-    -webkit-text-stroke-color: #ffffff;
-    paint-order: stroke fill;
 }
 
 .full-page-post .category-country span:last-of-type{
@@ -1546,11 +1538,7 @@ footer form button{
     font-family: "Rubik", sans-serif;
     direction: ltr;
     font-size: 50px;
-    color: #D77E78;
     font-weight: 800;
-    -webkit-text-stroke: 0.1px #ffffff;
-    -webkit-text-stroke-color: #ffffff;
-    paint-order: stroke fill;
 }
 
 .blogs .full-page-post .category span:first-of-type{
