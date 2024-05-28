@@ -1157,7 +1157,6 @@ footer form button{
     font-weight: 700;
     width: fit-content;
     display: block;
-    /* padding: 10px 37px 14px 37px; */
     padding: 13px;
 }
 
@@ -1213,11 +1212,7 @@ footer form button{
     }
 }
 
-.bg{
-    filter: grayscale(1);
-}
-
-.full-page-post .bg{
+.post .bg{
     position: absolute;
     top: 0;
     z-index: -1;
@@ -1225,10 +1220,7 @@ footer form button{
     height: 100%;
     transition: .3s;
     object-fit: cover;
-}
-
-.half-page-post .bg{
-    transition: .3s;
+    filter: grayscale(1);
 }
 
 .post:hover > .bg{
@@ -1237,18 +1229,18 @@ footer form button{
 }
 
 
-.full-page-post .container{
+.post .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     height: 100%;
     padding: 50px 0;
+    transition: .5s;
 }
 
 @media (max-width: 768px){
-    .full-page-post .container,
-    .half-page-post .container{
+    .post container{
         flex-direction: column;
         padding: 0;
         padding: 50px 20px !important;
@@ -1287,11 +1279,11 @@ footer form button{
     font-weight: 500;
 }
 
-.full-page-post .meta{
+.post .meta{
     flex: 70%
 }
 @media (max-width: 768px){
-    .full-page-post .meta{
+    .post .meta{
         flex: auto;
     }
 }
@@ -1338,7 +1330,8 @@ footer form button{
 
 .post-overlay{
     width: 100%;
-    height: 0;
+    height: 100%;
+    opacity: 0;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -1370,11 +1363,11 @@ footer form button{
 }
 
 .post:hover > .container{
-    display: none;
+    opacity: 0;
 }
 
 .post:hover > .post-overlay{
-    height: 100%;
+    opacity: 1;
 }
 
 
@@ -1481,17 +1474,6 @@ footer form button{
 .post .play svg{
     cursor: pointer;
 }
-
-.half-page-post .post:nth-child(odd)  .play svg,
-.full-page-post:nth-child(odd) .play svg{
-    fill: #FCDAD8
-}
-
-.half-page-post .post:nth-child(even)  .play svg,
-.full-page-post:nth-child(even) .play svg{
-    fill: #016477
-}
-
 
 .post .play{
     float: left;
@@ -2149,7 +2131,6 @@ footer form button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 28px;
