@@ -3427,3 +3427,47 @@ footer form button{
 }
 
 /** End Single Page **/
+
+
+/** Start Author Page **/
+
+.author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    padding-bottom: 100px;
+}
+
+.author h2{
+    color: #016677;
+    font-size: 16px;
+}
+
+.author img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.author h1{
+    color: #D77E78;
+}
+
+
+.author p{
+    text-align: center;
+    color: #016677;
+}
+
+.author .latest h2{
+    color: #D77E78;
+    font-size: 32px;
+}
+
+.author a{
+    color: #016677;
+    font-size: 32px;
+}
+
+/** End Author Page **/
