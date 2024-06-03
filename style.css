@@ -6,94 +6,8 @@ Author URI: mailto:husseinkhalil420@gmail.com
 Description: -
 Version: 1.11.6
 */
-/*@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-black'), url('assets/fonts/Dahab-sub-ngawia/Dahab-sub-ngawia/DahabArabic-Black.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
 
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-regular'), url('assets/fonts/Dahab-sub-ngawia/Dahab-sub-ngawia/DahabArabic-Regular.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-bold'), url('assets/fonts/Dahab-sub-ngawia/Dahab-sub-ngawia/DahabArabic-Bold.otf') format('opentype');*/
-/*    font-weight: bold;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-black'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Medium.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-regular'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Regular.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-bold'), url('assets/fonts/Omniaarabic-sub-vtvmlp/Omniaarabic-sub-vtvmlp/Omniaarabic-Bold.otf') format('opentype');*/
-/*    font-weight: bold;*/
-/*    font-style: normal;*/
-/*}*/
-
-
-/*=========*/
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-black'), url('assets/fonts/new/Dahab/DahabArabic-Black.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-regular'), url('assets/fonts/new/Dahab/DahabArabic-Regular.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-bold'), url('assets/fonts/new/Dahab/DahabArabic-Bold.otf') format('opentype');*/
-/*    font-weight: bold;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-black'), url('assets/fonts/new/Omnia/Omniaarabic-Medium.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-regular'), url('assets/fonts/new/Omnia/Omniaarabic-Regular.otf') format('opentype');*/
-/*    font-weight: normal;*/
-/*    font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: "Rubik", sans-serif;*/
-/*    src: local('dahab-bold'), url('assets/fonts/new/Omnia/Omniaarabic-Bold.otf') format('opentype');*/
-/*    font-weight: bold;*/
-/*    font-style: normal;*/
-/*}*/
 
 *{
     padding: 0;
@@ -177,6 +91,15 @@ a{
 
 .hk a:hover{
     color: violet;
+}
+
+
+.waves{
+    background-image: url('/assets/waves.png');
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /** Start Home Page **/
@@ -348,7 +271,6 @@ a{
 }
 
 .projects{
-    text-align: center;
     font-family: "Rubik", sans-serif;
 }
 
@@ -362,6 +284,7 @@ a{
     display: flex;
     align-items: stretch;
     justify-content: space-around;
+    text-align: center;
 }
 
 @media (max-width: 992px){
@@ -428,12 +351,17 @@ a{
     }
 }
 
-.projects-container .project a{
-    padding: 10px 30px;
-    background-color: #D78079;
-    color: white;
+.read-more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 112px;
+    font-family: "Rubik", sans-serif;
 }
 
+.read-more span{
+    color: #D77E78;
+}
 
 
 .how{
@@ -533,6 +461,7 @@ a{
     box-shadow: 3px 13px 13px 0px #FFEEED;
     margin: 10px;
     padding: 40px;
+    transition: .5s;
 }
 
 @media (max-width: 768px){
@@ -544,7 +473,6 @@ a{
 
 .how .cart:hover{
     transform: translateY(-17px);
-    transition: .3s;
     cursor: pointer;
 }
 
@@ -646,13 +574,6 @@ a{
     .share .carts .cart p{
         min-height: auto;
     }
-}
-
-
-.share .carts .cart a{
-    padding: 10px 30px;
-    background-color: #D78079;
-    color: white;
 }
 
 footer{
@@ -1869,87 +1790,148 @@ footer form button{
 
 /** Start Article Page **/
 
-#article .meta .img-title{
-    position: relative;
-}
-#article .meta .img-title .container{
-    position: relative;
+.article-page .thumbnail-container{
+    height: 550px;
 }
 
-#article .meta .img-title::after{
+.article-page .thumbnail{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 600px;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+.article-page .thumbnail-container:hover > .thumbnail{
+    filter: grayscale(0)
+}
+
+
+.article-page .title h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1111;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+    font-size: 64px;
+}
+
+@media (max-width: 772px){
+    .article-page .title h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px){
+    .article-page .title h1{
+        font-size: 40px;
+    }
+}
+
+.date-author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+}
+
+.date-author .author{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.date-author .author img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.date-author .author a,
+.date-author .date{
+    position: relative;
+    height: 30px;
+    color: black;
+}
+
+.date-author .author a::after,
+.date-author .date::after{
     content: "";
     position: absolute;
-    background: linear-gradient(10deg, #00000070, transparent);
+    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    height: 1px;
+    background-color: #016677;
 }
 
-#article .meta .article-title{
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    z-index: 1;
-}
 
-@media(max-width: 576px){
-    #article .meta .article-title{
-        text-align: center;
-        padding: 10px;
-    }
-}
 
-#article .meta h1{
-    font-family: 'Rubik', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-}
 
-#article .meta img{
-    width: 100%;
-    height: 500px;
-    max-width: 100% !important;
-    object-fit: cover;
-}
 
-#article .meta .date-author{
+
+
+
+
+.slider{
+    position: relative;
+    height: 800px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    max-width: 592px;
-    margin: auto;
-    padding: 25px 0;
+    align-items: center;
+    justify-content: center;
 }
 
-#article .meta .date-author span:last-of-type{
-    font-size: 22px;
+.slider .slide{
+    transition: 1s;
+    position: absolute;
 }
 
-#article .meta .date-author img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.slide-1{
+    z-index: 11;
 }
 
-@media (max-width: 330px){
-    #article .meta .date-author{
-        width: auto;
-    }
+.slide-2{
+    transform: translateX(-20px);
+}
+
+.slide-3{
+    transform: translate(-40px, 40px);
+}
+
+.slide-4{
+    transform: translate(-60px, 60px);
 }
 
 
-#article .carousel{
+.controls{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#prev,
+#next{
+    cursor: pointer;
+}
+
+/* #article .carousel{
     max-width: 592px;
     width: 100%;
     min-height: 394px;
     margin: 60px auto;
-}
+} */
 
 #article .carousel-caption{
     border-bottom: 2px solid #016477;
@@ -2097,7 +2079,6 @@ footer form button{
 }
 
 #article table td{
-    /*font-family: "Rubik", sans-serif;*/
     font-family: 'Rubik', sans-serif;
     font-size: 25px;
     padding: 12.5px 0;
@@ -2118,7 +2099,6 @@ footer form button{
 #article h5,
 #article h6{
     color: #016477;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: 'Rubik', sans-serif;
     max-width: 592px;
     width: 100%;
@@ -2130,32 +2110,9 @@ footer form button{
     color: #FA635C !important;
 }
 
-/*#article h1{*/
-/*    font-size: 3.5rem;*/
-/*}*/
-/*#article h2{*/
-/*    font-size: 3rem;*/
-/*}*/
-
-/*#article h3{*/
-/*    font-size: 2.75rem;*/
-/*}*/
-/*#article h4{*/
-/*    font-size: 2.5rem;*/
-/*}*/
-/*#article h5{*/
-/*    font-size: 2.25rem;*/
-/*}*/
-/*#article h6{*/
-/*    font-size: 2rem;*/
-/* }*/
-
-
-
 
 #article a{
     color: #744D47;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: "Rubik", sans-serif;
 }
 
@@ -2165,23 +2122,19 @@ footer form button{
 {
     max-width: 592px;
     margin: 20px auto;
-    /*font-size: 24px;*/
     font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     color: #000;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: "Rubik", sans-serif;
 }
 
 #article p{
-    /*font-family: "Rubik", sans-serif;*/
     font-family: "Rubik", sans-serif;
 }
 
 #article .wp-caption {
     max-width: 100%;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: 'Rubik', sans-serif;
 }
 
@@ -2190,7 +2143,6 @@ footer form button{
     text-align: center;
     font-style: italic;
     color: #949494;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
 }
@@ -2206,7 +2158,6 @@ footer form button{
     text-align: center;
     font-style: italic;
     color: #949494;
-    /*font-family: "Rubik", sans-serif;*/
     font-family: 'Rubik', sans-serif;
 }
 
@@ -3392,6 +3343,19 @@ footer form button{
 
 .page-title{
     padding: 20px 0;
+    position: relative;
+    width: fit-content;
+}
+
+.page-title::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #FCDAD7;
+    right: 0;
+    bottom: 25px;
+    z-index: -1;
 }
 
 .page-title svg{
@@ -3431,7 +3395,7 @@ footer form button{
 
 /** Start Author Page **/
 
-.author{
+.author-page{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3439,18 +3403,18 @@ footer form button{
     padding-bottom: 100px;
 }
 
-.author h2{
+.author-page h2{
     color: #016677;
     font-size: 16px;
 }
 
-.author img{
+.author-page img{
     width: 280px;
     height: 280px;
     border-radius: 50%;
 }
 
-.author .social-links{
+.author-page .social-links{
     align-self: flex-end;
     display: flex;
     align-items: center;
@@ -3458,22 +3422,22 @@ footer form button{
     width: 10%;
 }
 
-.author h1{
+.author-page h1{
     color: #D77E78;
 }
 
 
-.author p{
+.author-page p{
     text-align: center;
     color: #016677;
 }
 
-.author .latest h2{
+.author-page .latest h2{
     color: #D77E78;
     font-size: 32px;
 }
 
-.author a{
+.author-page a{
     color: #016677;
     font-size: 32px;
 }

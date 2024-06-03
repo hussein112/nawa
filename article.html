@@ -9,7 +9,7 @@
     <title>Nawa Media</title>
 </head>
 <body>
-  <header class="">
+  <header>
     <div class="landing-nav container">
         <nav class="navbar">
             <div class="container-fluid">
@@ -19,7 +19,21 @@
               <form role="search">
                 <input type="text">
               </form>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <script>
+                function toggleZIndex(){
+                  const title = document.querySelector('.title h1');
+                  if(window.getComputedStyle(title).getPropertyValue("z-index") == -1){
+                    title.style.zIndex=1
+                    setTimeout(() => {
+                      document.querySelector("header").style.backgroundColor = "";
+                    }, 250)
+                  }else{
+                    document.querySelector("header").style.backgroundColor = "#D78079";
+                    title.style.zIndex=-1
+                  }
+                }  
+              </script>
+              <button onclick="toggleZIndex()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbar">
@@ -43,26 +57,70 @@
               </div>
             </div>
         </nav>
-        <div class="info-tooltip">
-          <img data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-title="Page DescriptionPage DescriptionPage DescriptionPage DescriptionPage DescriptionPage DescriptionPage Description" data-bs-placement="right" src="assets/icons/info.svg" alt="page description">
-        </div>
     </div>
   </header>
 
-    <div id="article">
-        <div class="meta">
-            <img src="assets/images/ta7kik/1.jpeg">
-            <div class="container">
-                <h1>العنوان</h1>
-                <div class="date-author">
-                    <span>10/7/2023</span>
-                    <span>الكاتب</span>
-                </div>
-                <hr>
-            </div>
-        </div>
-        <p class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores tenetur eaque illum eum, praesentium asperiores officia quam, dolore repudiandae eveniet, nesciunt ut saepe aut illo. Magnam aut sapiente quibusdam porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aut eos autem dolore sit. Ipsam iure accusantium, voluptate corporis optio id beatae repellat porro autem placeat dolorum voluptates, soluta ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, facilis. Cumque perferendis sed pariatur a, provident quos dicta dolore perspiciatis soluta eveniet voluptatem illum placeat beatae magni sint ipsum libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odit voluptate architecto. Iusto cum esse eum expedita alias. Perspiciatis repellat sed tenetur assumenda debitis commodi? Ex expedita quas amet delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione eveniet quos quod sint numquam ipsam. Maxime eligendi quia suscipit. Velit consectetur doloremque ipsam exercitationem? Eligendi quibusdam illum omnis autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis rerum facere maxime doloremque. Non saepe velit cum ea accusantium, aperiam, ab nam voluptas ipsam, quam officiis doloremque numquam excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, praesentium at! Odit aperiam provident quibusdam? Provident consequatur eligendi itaque quo perspiciatis adipisci similique! Laboriosam eaque veniam, porro quae esse alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint earum accusamus, officiis voluptatum perferendis sapiente delectus, dolorum repellat deserunt possimus in? Veniam iure eum nobis cupiditate sapiente quasi porro.</p>
+  <div class="article-page">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="assets/images/ta7kik/1.jpeg">
     </div>
+    <div class="title">
+      <h1>بنية تحتية مدمرة، ووهمية المناطق الآمنة
+        تداعيات قصــف طريــق خان يونس - رفح</h1>
+    </div>
+    <div class="date-author container">
+      <div class="author">
+        <img src="../assets/images/team/ahlam.jpeg" />
+        <a href="#">بـقـلـم محمد أبو زيد</a>
+      </div>
+      <span class="date">01-03-2024</span>
+    </div>
+    <div id="article">
+      <p class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores tenetur eaque illum eum, praesentium asperiores officia quam, dolore repudiandae eveniet, nesciunt ut saepe aut illo. Magnam aut sapiente quibusdam porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aut eos autem dolore sit. Ipsam iure accusantium, voluptate corporis optio id beatae repellat porro autem placeat dolorum voluptates, soluta ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, facilis. Cumque perferendis sed pariatur a, provident quos dicta dolore perspiciatis soluta eveniet voluptatem illum placeat beatae magni sint ipsum libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odit voluptate architecto. Iusto cum esse eum expedita alias. Perspiciatis repellat sed tenetur assumenda debitis commodi? Ex expedita quas amet delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione eveniet quos quod sint numquam ipsam. Maxime eligendi quia suscipit. Velit consectetur doloremque ipsam exercitationem? Eligendi quibusdam illum omnis autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis rerum facere maxime doloremque. Non saepe velit cum ea accusantium, aperiam, ab nam voluptas ipsam, quam officiis doloremque numquam excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, praesentium at! Odit aperiam provident quibusdam? Provident consequatur eligendi itaque quo perspiciatis adipisci similique! Laboriosam eaque veniam, porro quae esse alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint earum accusamus, officiis voluptatum perferendis sapiente delectus, dolorum repellat deserunt possimus in? Veniam iure eum nobis cupiditate sapiente quasi porro.</p>
+      <div class="slider">
+        <div class="slide slide-1">
+          <img src="assets/images/team/ahlam.jpeg" alt="">
+        </div>
+        <div class="slide slide-2">
+          <img src="assets/images/team/christa.jpeg" alt="">
+        </div>
+        <div class="slide slide-3">
+          <img src="assets/images/team/maram.jpeg" alt="">
+        </div>
+        <div class="slide slide-4">
+          <img src="assets/images/team/hassan.png" alt="">
+        </div>
+        <div class="controls">
+          <span id="next">
+            <svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L13.3115 16.1554L3.41602 30.4259" stroke="#3A6676" stroke-width="3.4" stroke-miterlimit="10"/>
+            </svg>
+          </span>
+          <span id="prev">
+            <svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.3115 2L3 16.1554L12.879 30.4259" stroke="#3A6676" stroke-width="3.4" stroke-miterlimit="10"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <script>
+        const next = document.getElementById("next");
+        const prev = document.getElementById("prev");
+        const slides = document.querySelectorAll(".slide");
+        const slideNumbers = slides.length;
+        next.addEventListener("click", () => {
+          slides.forEach((slide, index) => {
+            const cls = Number(slide.className.substring(12));
+            if(cls < slideNumbers){
+              slide.className = "slide slide-" + Number(cls + 1);
+            }else{
+              slide.className = "slide slide-1";
+            }          
+          })
+        })
+      </script>
+    </div>
+  </div>
 
   <footer>
     <div class="container">
