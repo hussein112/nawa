@@ -16,9 +16,6 @@
               <a href="index.html">
                 <img class="responsive-logo" src="assets/logo_green.svg" alt="">
               </a>
-              <form role="search">
-                <input type="text">
-              </form>
               <script>
                 function toggleZIndex(){
                   const title = document.querySelector('.title h1');
@@ -150,10 +147,6 @@
           <img class="slide-image" src="assets/images/ta7kik/2.jpeg" alt="">
           <p class="caption">Test Caption 3</p>
         </div>
-        <div class="slide slide-4">
-          <img class="slide-image" src="assets/images/ta7kik/3.jpeg" alt="">
-          <p class="caption">أحمد وأسامة <a href="#">تست</a> ليسا الوحيدين الذين يخسرا محاصيل المانجو </p>
-        </div>
         <div class="controls">
           <span id="next">
             <svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +182,7 @@
             if(cls > 1){
               slide.className = "slide slide-" + Number(cls - 1);
             }else{
-              slide.className = "slide slide-4";
+              slide.className = "slide slide-3";
             }          
           })
         })

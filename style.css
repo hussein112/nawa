@@ -102,6 +102,25 @@ a{
     background-repeat: no-repeat;
 }
 
+
+.posts form{
+    flex: 1;
+    margin: 20px 0;
+}
+
+.posts form input{
+    background: #ddddddb8;
+    border: 0;
+    outline: 0;
+    width: 50px;
+    padding: 5px;
+    transition: .5s;
+}
+
+.posts form input:focus{
+    width: 60%;
+}
+
 /** Start Home Page **/
 .responsive-logo{
     width: 70px;
@@ -203,7 +222,7 @@ a{
 
 .post .author,
 .post .date{
-    font-size: 24px;
+    font-size: 18px;
     padding: 0 5px;
     color: white;
     -webkit-text-stroke: 2px #ffffff;
@@ -1191,13 +1210,12 @@ footer form button{
 }
 
 .full-page-post .category-country span{
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .full-page-post .category-country span:last-of-type{
-    transform: translateY(-40px);
-    font-weight: 500;
+    transform: translateY(-20px);
 }
 
 .post .meta{
@@ -1215,8 +1233,8 @@ footer form button{
 
 .post a{
     font-family: "Rubik", sans-serif;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
     line-height: 119.4%;
     display: block;
     width: 655px;
@@ -1822,9 +1840,6 @@ footer form button{
 }
 
 
-
-
-
 .sticky-social {
     position: fixed;
     top: 88%;
@@ -1871,7 +1886,7 @@ footer form button{
     position: absolute;
     height: 600px;
     width: 100%;
-    top: 0;
+    top: 100px;
 }
 
 .article-page .title h1{
@@ -3200,6 +3215,10 @@ blockquote.left:has(blockquote){
 
 .tools .tool-collection{
     width: 400px;
+}
+
+.tools .nested-collection{
+    width: 100%;
 }
 
 .tools-header{
